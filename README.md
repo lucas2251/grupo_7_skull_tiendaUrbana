@@ -2,3 +2,5 @@
 
 Integrantes:
 
+Yesica Isabela Fiorentino
+● 31 años, camarera. Estudiante en Programación FullStack en Digital House.

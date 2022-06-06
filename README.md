@@ -7,3 +7,7 @@ Yesica Isabela Fiorentino
 
 Lucas Gabriel Cordoba
 ● 24 años, comerciante. Estudiante en Programación FullStack en Digital House.
+
+Sebastian Jose Carballo
+● 27 años, autodidacta. Estudiante en Programación FullStack en Digital House.
+

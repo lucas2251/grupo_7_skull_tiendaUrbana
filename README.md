@@ -11,3 +11,4 @@
 ### Sebastian Jose Carballo
 ● 27 años, autodidacta. Estudiante en Programación FullStack en Digital House.
 
+![Logo](https://github.com/SebastianCarballo/grupo-7-skull-tienda-urbana/blob/main/extras/IMG-20220606-WA0041.jpg "Logo")

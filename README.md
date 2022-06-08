@@ -11,11 +11,12 @@
 ### Sebastian Jose Carballo
 ● 27 años, autodidacta. Estudiante en Programación FullStack en Digital House.
 
-## ***SKULL - tienda urbana***
+## ***¡Bienvenidxs a SKULL - tienda urbana!***
 
 ![Logo](https://github.com/SebastianCarballo/grupo-7-skull-tienda-urbana/blob/main/extras/IMG-20220606-WA0041.jpg "Logo")
 
-### Bienvenidos!
+### ¿Quienes somos?
+
 DEDICADA PARA TODAS LAS EDADES, A TODO AQUEL QUE LO LLEVA DENTRO, A FUEGO.
 
 Especializados en productos profesionales para practicar skateboard. En nuestro catálogo encontrarás skates completos o todos sus componentes: ruedas, ejes, rodamientos, lijas y accesorios  o recambios para tus tablas. En definitiva, todo lo que necesitas para practicar este deporte. 

@@ -11,6 +11,10 @@
 ### Sebastian Jose Carballo
 ● 27 años, autodidacta. Estudiante en Programación FullStack en Digital House.
 
+### Gaspar Emiliano Amarante
+● 39 años, informante turistico. Estudiante en Programación FullStack en Digital House.
+
+
 
 ## ***¡Bienvenidxs a SKULL - tienda urbana!***
 

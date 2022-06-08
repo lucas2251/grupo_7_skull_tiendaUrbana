@@ -36,7 +36,7 @@ Nuestra tienda online dispone también de complementos como gorros, llaveros, ci
 Como ya sabes, te vamos a ofrecer un servicio personalizado, aconsejándote en tu compra para que te lleves lo más adecuado para vos y la mejor calidad de skate.
 
 
-DEDICADA PARA TODAS LAS EDADES, A TODO AQUEL QUE LLEVA DENTRO ESTA PASION.
+DEDICADA PARA TODAS LAS EDADES, A TODO AQUEL QUE LO LLEVA DENTRO ESTA PASION.
 
 
 

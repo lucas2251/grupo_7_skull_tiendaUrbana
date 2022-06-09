@@ -44,7 +44,14 @@ DEDICADA PARA TODAS LAS EDADES, A TODO AQUEL QUE LO LLEVA DENTRO, A FUEGO.
 
 ### ¡Paginas Referentes!
 
-https://www.caafeskateshop.com.ar/
+1 ●Por los productos o servicios que ofrecen: [caafeskateshop] (https://www.caafeskateshop.com.ar/)
+2 ●Por los clientes a los que apuntan:()
+3 ●Por la estética que presentan:()
+4 ●Por las funcionalidades implementadas:()
+5 ●Por las funcionalidades implementadas:()
+
+
+
 
 
 

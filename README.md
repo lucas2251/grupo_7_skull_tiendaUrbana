@@ -18,7 +18,7 @@
 
 ## ***¡Bienvenidxs a SKULL - tienda urbana!***
 
-![Logo](https://github.com/SebastianCarballo/grupo-7-skull-tienda-urbana/blob/main/extras/logos/logo Skull-tienda urbana.jpeg "Logo")
+![Logo](https://github.com/SebastianCarballo/grupo-7-skull-tienda-urbana/blob/main/extras/logos/logo-Skull-tienda-urbana.jpeg "Logo")
 
 ### Acerca de nosotros:
 

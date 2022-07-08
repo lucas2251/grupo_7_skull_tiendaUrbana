@@ -32,7 +32,7 @@
 -
 -
 
-#Dejar de hacer
+## Dejar de hacer
 
 -
 -

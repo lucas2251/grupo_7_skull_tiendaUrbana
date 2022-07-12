@@ -10,3 +10,16 @@ html{
     font-size: 10px;
     font-family: var(--fuente-Poppins);
 }
+
+body{
+    min-width: 425px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

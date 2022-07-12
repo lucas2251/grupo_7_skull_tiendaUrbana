@@ -7,4 +7,8 @@ root:{
     --colorPrincipal:;
 
     /* Fuentes */
+    --fuente-Fredoka: 'Fredoka', sans-serif;
+    --fuente-fredoka-one:'Fredoka One', cursive;
+    --fuente-Inter:'Inter', sans-serif;
+    --fuente-Poppins:'Poppins', sans-serif;
 }

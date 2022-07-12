@@ -1,0 +1,33 @@
+.nav-footer{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.nav-footer li{
+    text-align: center;
+    width: 322px;
+    height: 34px;
+    background: #000000;
+    border: 1px solid #6DD6B0;
+    margin: 5px 0;
+}
+.nav-footer li a{
+    color: white;
+    font-size: 22px;
+}
+
+.icons-footer ul{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.icons-footer ul li{
+    margin: 0 15px;
+}
+.logo-footer{
+    display: flex;
+    justify-content: center;}
+.logo-footer img{
+    width: 30%;
+}

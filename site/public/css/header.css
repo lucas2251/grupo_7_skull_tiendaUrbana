@@ -9,9 +9,20 @@
     text-align: center;
 }
 
-
 .home header .logo img{
-    width: 200px;
-    height: 200px;
+    width: 50%;
+}
 
+.home header .top{
+    display: flex;
+    flex-direction: row;
+}
+
+.home .top .carrito, .usuario{
+    margin: 5px 5px 5px;
+    font-size: 20px;
+}
+
+.home .search{
+    text-align: center;
 }

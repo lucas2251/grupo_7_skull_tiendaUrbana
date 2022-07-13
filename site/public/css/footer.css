@@ -16,7 +16,12 @@
     color: white;
     font-size: 22px;
 }
-
+.mapa{
+    display: none;
+}
+.desc-mapa{
+    display: none;
+}
 .icons-footer ul{
     display: flex;
     justify-content: center;
@@ -30,4 +35,28 @@
     justify-content: center;}
 .logo-footer img{
     width: 30%;
+}
+@media (min-width:426px){
+    .nav-footer{
+        margin: 20px 30px;
+    }
+    .nav-footer ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logo-footer img{
+        width: 20%;
+    }
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+.desc-mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
 }

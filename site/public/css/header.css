@@ -4,6 +4,7 @@ header{
     box-shadow: 2px 2px 4px black;
 }
 
+
 header .content-header{
     width: 90%;
     margin: 0 auto;
@@ -23,7 +24,7 @@ header .content-header .burger i{
 }
 
 header .content-header .logo{
-    width: 50%;
+    width: 45%;
 }
 
 header .content-header .logo img{

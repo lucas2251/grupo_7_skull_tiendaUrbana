@@ -95,3 +95,13 @@ header .content-header .nav-desktop ul li  a{}
         color: var(--colorBlanco)
     }
 }
+
+
+
+/* Tablet */
+
+@media (min-width:461px) {}
+
+/* Desktop */
+
+@media (min-width:769px) {}

@@ -72,7 +72,7 @@ header .content-header .nav-desktop ul li  a{}
 }
  
 
-@media (min-width:425px){
+@media (min-width:768px){
     header .content-header .burger{
         display: none;
     }

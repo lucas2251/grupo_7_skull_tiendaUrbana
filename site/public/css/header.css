@@ -1,28 +1,38 @@
-.home header button{
-    width: 50px;
-    height: 50px;
-    font-size: 35px;
-    border: 1px 
+header{
+    width: 100%;
+    box-shadow: 2px 2px 4px black;
 }
 
-.home header .logo{
-    text-align: center;
-}
-
-.home header .logo img{
-    width: 50%;
-}
-
-.home header .top{
+header .content-header{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
 }
 
-.home .top .carrito, .usuario{
-    margin: 5px 5px 5px;
-    font-size: 20px;
+header .content-header .logo{
+    width: 100%;
 }
 
-.home .search{
-    text-align: center;
+header .content-header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .content-header .search{
+    width: 45%;
+}
+
+/* header img{
+    padding: 10px;
+    width: 75%;
+} */
+header .top{
+    display: flex;
+    justify-content:space-around;
+    justify-content: flex-start;
 }

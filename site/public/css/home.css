@@ -1,0 +1,49 @@
+.home main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home main .banner img{
+    width: 100%;
+    box-shadow: 1px 1px 20px 20px var(--colorVerdeClaro);
+    
+}
+
+.home main .banner{
+    display: none;
+}
+
+.home main .contenedor{
+    padding: 30px 0
+}
+
+.home main .ofertas{
+    text-align: center;
+    font-size: 20px;
+    color: var(--colorNegro);
+    margin-bottom: 30px;
+}
+
+.home main section{
+    padding: 20px 0;
+}
+
+.home main section article{
+    margin: 15px 0
+}
+
+.home main section article img{
+    width: 100%;
+}
+
+.home main section article .descuento{
+    color: var(--colorRosa);
+}
+
+.home main section article .descripcion{
+    font-weight: bold;
+}
+
+.home main section article .precio{
+    font-size: 16px;
+}

@@ -2,8 +2,17 @@
 /* @importurl(); */
 
 
-
+:root{
     /* Colores */
-    /* --colorPrincipal:; */
+    --colorVerdeOscuro: #399B9B;
+    --colorVerdeClaro: #77ABAB;
+    --colorRosa: #C2789C;
+    --colorGris: #4F6162;
+    --colorNegro: #201D23;
 
     /* Fuentes */
+    --fuente-Fredoka: 'Fredoka', sans-serif;
+    --fuente-fredoka-one:'Fredoka One', cursive;
+    --fuente-Inter:'Inter', sans-serif;
+    --fuente-Poppins:'Poppins', sans-serif;
+}

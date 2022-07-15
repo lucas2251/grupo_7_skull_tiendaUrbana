@@ -22,6 +22,7 @@ app.get('/carrito',(req,res) => res.sendFile(path.resolve(__dirname,'views','car
 app.get('/login',(req,res) => res.sendFile(path.resolve(__dirname,'views','login.html')));
 app.get('/register',(req,res) => res.sendFile(path.resolve(__dirname,'views','register.html')));
 app.get('/contacto',(req,res) => res.sendFile(path.resolve(__dirname,'views','contacto.html')));
+app.get("*",(req,res) => res.sendFile(path.resolve(__dirname, 'views','404.html')))
 
 liveReloadServer.server.once("connection",() => {
     setTimeout(() => {

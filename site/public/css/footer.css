@@ -2,6 +2,14 @@ footer{
     background-image: url("/images/fondo4.png");
     background-size: 20%;
 }
+footer section ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer section ul li{
+    list-style: none;
+}
+
 .nav-footer{
     list-style: none;
     display: flex;

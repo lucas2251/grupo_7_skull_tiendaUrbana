@@ -17,7 +17,7 @@ header .content-header{
 }
 
 header .content-header .burger{
-
+    color: var(--colorBlanco);
 }
 
 header .content-header .burger i{

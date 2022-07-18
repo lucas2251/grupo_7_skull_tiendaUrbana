@@ -15,96 +15,93 @@ header{
     text-align: center;
     margin: 0 auto;
 }
+.main-header-top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    font-size: 15px;
 
-header .content-header .burger{
+
+}
+
+.logo{
+    width: 180px;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
     color: var(--colorBlanco);
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
 }
 
-header .content-header .burger i{
-    font-size: 2rem;
-}
 
-header .content-header .logo{
-    width: 45%;
-}
 
-header .content-header .logo img{
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
 
-header .content-header .search{
-    width: 50%;
-}
 
-header .content-header .search input{
-    width:100%;
-    padding: .8rem 0 .8rem 1rem;
-    outline: none;
-    border-radius: 5px;
-    border: solid 1px var(--colorGris);
-}
-header .content-header .icons {
-    font-size: 2rem;
-    display: flex;
-}
 
-header .content-header .icons li{
-    padding: .8rem;
-}
-
-header .content-header .nav-desktop{
-    display:none;
-}
-
-header .content-header .nav-desktop ul li {}
-
-header .content-header .nav-desktop ul li  a{}
-
- header img{
-    padding: 10px;
-    width: 50%;
-} 
- header .top{
-    display: flex;
-    justify-content:space-around;
-    justify-content: flex-start;
-}
- 
-
-@media (min-width:768px){
-    header .content-header .burger{
+@media (min-width:769px){
+    .main-header-top-bar{
+        display: flex;/* estilos y media quieris sobre 768 px para tablet en header */
+        justify-content: space-between ;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-button{
         display: none;
     }
-    header .content-header .nav-desktop{
-        display: block;
-        width: 100%;
-    }
-    header .content-header .nav-desktop ul{
+    .main-navbar{/* ahor hacemos que se vea la barra */
         display: flex;
         justify-content: space-between;
-        border-top: solid 1px var(--colorGris);
     }
-    header .content-header .nav-desktop ul li{
-        padding: 1rem 0;
-        width:20%;
-        text-align: center;
+    .main-navbar ul{
+        display: flex;
     }
-    header .content-header .nav-desktop ul li:hover{
-        background-color: var(--colorVerdeOscuro);
-    }
-    header .content-header .nav-desktop ul li:hover a{
-        color: var(--colorBlanco)
+    .main-navbar  li{
+        margin: 0 5px;
     }
 }
 
 
-
-/* Tablet */
-
-@media (min-width:461px) {}
-
-/* Desktop */
-
-@media (min-width:769px) {}
+@media(min-width:1200px){
+    .logo{
+        width:250px;
+    }
+    .main-header-top-bar,.main-navbar{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .main-header-top-bar{
+        align-items:center ;
+    }
+    .copy-header{
+        margin:0;
+        max-width: none;/* aca no limita el tamaño del logo y el h2 */
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .main-navbar{
+        margin-top: 20px;
+    }
+    .main-navbar  li{
+        margin: 0 10px;
+    }
+    .main-navbar  a{
+        font-size: 19px;
+    }
+}

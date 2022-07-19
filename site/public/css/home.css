@@ -94,6 +94,13 @@
     justify-content: space-evenly;
 }
 
+.home main .section3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .home section .contenedor2{
     display: inline-block;
 }
@@ -113,6 +120,10 @@
     .home main section article{
     width: 20%;
 }
+
+.home main .section3 article{
+    width: 40%;
+} 
 
 .home main .section1 article .image:hover .producto{
     position: relative;

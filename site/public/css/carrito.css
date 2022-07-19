@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 95%;
     margin: auto;
-    border: 2px solid var(--colorGris);
+    box-shadow: 4px 4px 8px black;
  }
  body main .nav-carrito{
     display: flex;
@@ -51,6 +51,7 @@ body main .precio{
     display: flex;
     justify-content: right;
     margin-right: 20px;
+    margin-top: 20px;
     font-size: 18px;
 }
 body section .envio{
@@ -68,8 +69,9 @@ body section article .sin-envio{
     margin-top: 10px;
 }
 body main .total .total-neto{
-    border: 1px solid var(--colorGris);
+    box-shadow: 4px 4px 8px black;
     font-size: 16px;
+    border: 2px solid var(--colorVerdeOscuro);
     margin:10px 20px;
 }
 body main .boton-compra{
@@ -88,7 +90,7 @@ body main .boton-compra article {
 
 
 body main .boton-compra .comprar{
-    border: 1px solid black;
+    box-shadow: 4px 4px 8px black;
     background-color: var(--colorVerdeOscuro);
     color: white;
     width: 40%;
@@ -100,10 +102,10 @@ body main .boton-compra .comprar{
         margin-left: 230px;
     }
     body main .producto{
-        border: none;
+        box-shadow: none;
     }
     body main section .imagen-carrito{
-        border: 2px solid var(--colorGris);
+        box-shadow: 4px 4px 8px black;
     }
     body main section .desc-carrito{
         margin-top: 15px;

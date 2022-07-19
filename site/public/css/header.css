@@ -18,7 +18,7 @@ header{
 .main-header-top-bar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .search{
     font-size: 15px;
@@ -56,7 +56,8 @@ header{
 @media (min-width:769px){
     .main-header-top-bar{
         display: flex;/* estilos y media quieris sobre 768 px para tablet en header */
-        justify-content: space-between ;
+        justify-content: center ;
+        align-items: center;
     }
     .copy-header{
         max-width: 350px;
@@ -88,6 +89,8 @@ header{
     }
     .main-header-top-bar{
         align-items:center ;
+        justify-content: center ;
+        align-items: center;
     }
     .copy-header{
         margin:0;

@@ -103,7 +103,7 @@ body main .boton-compra .comprar{
         border: none;
     }
     body main section .imagen-carrito{
-        border: 1px solid var(--colorGris);
+        border: 2px solid var(--colorGris);
     }
     body main section .desc-carrito{
         margin-top: 15px;
@@ -115,13 +115,13 @@ body main .boton-compra .comprar{
         font-size: 12px
     }
     body main section .interaccion-carrito{
-        border-bottom: 1px solid var(--colorVerdeOscuro);
+        border-bottom: 2px solid var(--colorVerdeOscuro);
     } 
     body main .precio{
         margin-top: 10px;
     }
     body main .total .total-neto{
-        border: 1px solid var(--colorVerdeOscuro);}
+        border: 2px solid var(--colorVerdeOscuro);}
 }
 
 
@@ -134,7 +134,7 @@ body main .boton-compra .comprar{
         width: 95%;
         justify-content: space-around;
         margin: auto;
-        border-top: 1px solid var(--colorVerdeOscuro);
+        border-top: 2px solid var(--colorVerdeOscuro);
      }
      body main section .imagen-carrito img{
         width: 100%;
@@ -169,11 +169,11 @@ body main section .sumar-carrito input{
    body main .total{
     width: 80%;
     margin: auto;
-    border-top: 1px solid var(--colorVerdeOscuro);
-    border-bottom: 1px solid var(--colorVerdeOscuro);
+    border-top: 2px solid var(--colorVerdeOscuro);
+    border-bottom: 2px solid var(--colorVerdeOscuro);
    }
    body main .total .total-neto{
-    border: 1px solid var(--colorGris);
+    border: 2px solid var(--colorGris);
     width: 50%;
     margin: 15px auto ;
    }

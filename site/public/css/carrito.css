@@ -68,7 +68,7 @@ body section article .sin-envio{
     margin-top: 10px;
 }
 body main .total .total-neto{
-    border: 1px solid rgb(0, 0, 0,0.5);
+    border: 1px solid var(--colorGris);
     font-size: 16px;
     margin:10px 20px;
 }
@@ -81,15 +81,106 @@ body main .boton-compra article{
     justify-content: center;
     margin: 10px 0;
 }
-body main .boton-compra article p{
+body main .boton-compra article {
     color: var(--colorVerdeOscuro);
+    
 }
+
+
 body main .boton-compra .comprar{
     border: 1px solid black;
     background-color: var(--colorVerdeOscuro);
     color: white;
     width: 40%;
     padding: 10px;
-    margin-left: 125px;
+    margin-left: 125px
+}
+@media (min-width:426px){
+    body main .boton-compra .comprar{
+        margin-left: 230px;
+    }
+    body main .producto{
+        border: none;
+    }
+    body main section .imagen-carrito{
+        border: 1px solid var(--colorGris);
+    }
+    body main section .desc-carrito{
+        margin-top: 15px;
+    }
+    body main section .sumar-carrito div{
+        margin:5px;
+    }
+    body main .boton-compra p{
+        font-size: 12px
+    }
+    body main section .interaccion-carrito{
+        border-bottom: 1px solid var(--colorVerdeOscuro);
+    } 
+    body main .precio{
+        margin-top: 10px;
+    }
+    body main .total .total-neto{
+        border: 1px solid var(--colorVerdeOscuro);}
+}
 
+
+
+
+@media (min-width:769px){
+    body main .producto{
+        display: flex;
+        flex-direction:row;
+        width: 95%;
+        justify-content: space-around;
+        margin: auto;
+        border-top: 1px solid var(--colorVerdeOscuro);
+     }
+     body main section .imagen-carrito img{
+        width: 100%;
+
+}
+body main section .imagen-carrito{
+    width: 45%;
+    margin-top: 10px;
+
+}
+body main section .desc-carrito{
+    font-size: 14px;
+    margin-top:90%;
+    margin-left: 10px;
+    height: 20px;
+}
+body main section .sumar-carrito{
+    margin-top: 40px;
+}
+body main section .sumar-carrito input{
+    width: 20px;
+    height: 25px;
+   }
+   body main .producto .interaccion-carrito{
+    margin-right: 10%;
+    border-bottom: none;
+   }
+   body main .precio{
+    margin-right: 50px;
+    margin-bottom: 10px;
+   }
+   body main .total{
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid var(--colorVerdeOscuro);
+    border-bottom: 1px solid var(--colorVerdeOscuro);
+   }
+   body main .total .total-neto{
+    border: 1px solid var(--colorGris);
+    width: 50%;
+    margin: 15px auto ;
+   }
+   body main .boton-compra .comprar{
+    margin-left: 30%;
+   }
+   body main section .tacho-carrito{
+    margin-top: 40px;
+   }
 }

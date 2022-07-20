@@ -1,0 +1,160 @@
+footer{
+    background-image: url("/images/fondo4.png");
+    background-size: 20%;
+}
+footer section ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer section ul li{
+    list-style: none;
+}
+
+.nav-footer{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.nav-footer li{
+    text-align: center;
+    width: 322px;
+    height: 34px;
+    background: #000000;
+    border: 1px solid #6DD6B0;
+    margin: 5px 0;
+}
+.nav-footer li a{
+    color: white;
+    font-size: 22px;
+}
+.mapa{
+    display: none;
+}
+.desc{
+    display: none;
+}
+.icons-footer ul{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.icons-footer ul li{
+    margin: 0 15px;
+}
+.icons-footer ul li a{
+    background-color: white;
+}
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.logo-footer img{
+    width: 30%;
+}
+@media (min-width:426px){
+    footer{
+        background-size: 15%;
+    }
+    .nav-footer{
+        margin: 20px 30px;
+    }
+    .nav-footer ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo-footer img{
+        width: 20%;
+    }
+    .icons-footer ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 170px;
+        margin-left: 100px;
+        
+    }
+    .icons-footer ul li{
+        margin-top: 5px;
+        margin: 0 20px;
+        font-size: 60px;
+    }
+    
+.mapa{
+    display: flex;
+    margin-left: 50px;
+}
+.icon-mapa{
+    display: flex;
+
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+}
+
+
+    
+}
+@media (min-width:769px){
+    footer{
+        background-size: 8%;
+    }
+    .nav-footer{
+        margin: 20px 30px;
+    }
+    .nav-footer ul{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        margin: 0 60px;
+    }
+    .nav-footer ul li{
+        margin: 0 10px;
+    }
+
+
+
+    .logo-footer img{
+        width: 15%;
+    }
+    .icons-footer{
+        display: flex;
+        
+    }
+    .icons-footer ul{
+        display: flex;
+        width: 80%;
+        margin-bottom: 0px;
+        height: 90px;
+    
+    }
+    .icons-footer ul li{
+        margin-top: 5px;
+        margin: 0 30px;
+        font-size: 60px;
+    }
+    
+.mapa{
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+.icon-mapa{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 44%;
+    font-size: 16px;
+}
+}

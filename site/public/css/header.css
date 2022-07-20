@@ -48,3 +48,11 @@ header .content-header .icons{
 header .content-header .icons li{
     padding: .8rem;
 }
+
+header .content-header li i{
+
+}
+
+header .content-header .nav-desktop{
+    display: none;
+}

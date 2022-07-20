@@ -80,6 +80,11 @@ header .content-header .nav-desktop ul li a {}
         justify-content: space-between;
         border-top: solid 1px var(--colorVerdeOscuro);
     }
+    header .content-header .nav-desktop ul li {
+        padding: 1rem 0;
+        width: 20%;
+        text-align: center;
+    }
     header .content-header .nav-desktop ul li:hover{
         background-color: var(--colorVerdeOscuro);
     }

@@ -45,3 +45,6 @@ header .content-header .icons{
     font-size: 2rem;
     display: flex;
 }
+header .content-header .icons li{
+    padding: .8rem;
+}

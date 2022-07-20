@@ -41,7 +41,8 @@ header .content-header .search input{
     padding: .8rem 0 .8rem 1rem;
     outline: none;
     border-radius: 5px;
-    border: solid 1px var(--colorVerdeOscuro)
+    border: solid 1px var(--colorVerdeOscuro);
+    text-align: center;
 }
 
 header .content-header .icons{

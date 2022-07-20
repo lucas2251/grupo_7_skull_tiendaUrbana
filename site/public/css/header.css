@@ -14,3 +14,11 @@ header .content-header{
     padding: 1rem 0;
 }
 
+header .content-header .burger{
+    background-color: var(--colorBlanco);
+    color: var(--colorVerdeOscuro);
+}
+
+header .content-header .burger i{
+    font-size: 2rem;
+}

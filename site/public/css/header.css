@@ -60,6 +60,4 @@ header .content-header .nav-desktop ul li {}
     
 header .content-header .nav-desktop ul li a {}
 
-@(min-width:769px){
-    
-}
+@media(min-width:769px)

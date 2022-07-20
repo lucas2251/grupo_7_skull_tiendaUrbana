@@ -40,3 +40,8 @@ header .content-header .search input{
     border-radius: 5px;
     border: solid 1px var(--colorVerdeOscuro)
 }
+
+header .content-header .icons{
+    font-size: 2rem;
+    display: flex;
+}

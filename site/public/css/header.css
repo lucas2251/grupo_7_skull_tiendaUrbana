@@ -73,4 +73,10 @@ header .content-header .nav-desktop ul li a {}
         justify-content: space-between;
         border-top: solid 1px var(--colorVerdeOscuro);
     }
+    header .content-header .nav-desktop ul li:hover{
+        background-color: var(--colorVerdeOscuro);
+    }
+    header .content-header .nav-desktop ul li:hover a{
+        color:var(--colorBlanco)
+    }
 }

@@ -32,3 +32,11 @@ header .content-header .logo img{
 header .content-header .search{
     width: 45%;
 }
+
+header .content-header .search input{
+    width: 100%;
+    padding: .8rem 0 .8rem 1rem;
+    outline: none;
+    border-radius: 5px;
+    border: solid 1px var(--colorVerdeOscuro)
+}

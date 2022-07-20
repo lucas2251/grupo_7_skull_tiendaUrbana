@@ -1,5 +1,14 @@
-header .login{
+body header {
     width: 100%;
     box-shadow: 2px 2px 4px black;
     background-color: black/* var(--colorNegro) */;
+}
+
+body header .content-header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
 }

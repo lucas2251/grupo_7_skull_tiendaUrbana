@@ -64,7 +64,7 @@ footer section ul li{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
     .logo-footer img{
         width: 20%;

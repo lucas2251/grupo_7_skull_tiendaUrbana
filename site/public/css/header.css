@@ -60,4 +60,17 @@ header .content-header .nav-desktop ul li {}
     
 header .content-header .nav-desktop ul li a {}
 
-@media(min-width:769px)
+@media(min-width:769px){
+    header .content-header .burger{
+        display: none;
+    }
+    header .content-header .nav-desktop{
+        display: block;
+        width: 100%;
+    }
+    header .content-header .nav-desktop ul{
+        display: flex;
+        justify-content: space-between;
+        border-top: solid 1px var(--colorVerdeOscuro);
+    }
+}

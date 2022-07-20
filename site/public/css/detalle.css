@@ -1,27 +1,83 @@
 body{
-    background-color: var(--colorVerdeClaro);
+    background-color:#77ABAB;
+    font-family: var(--fuente-Fredoka);
+    padding: 25px;
 }
-.detail-main .product-detail {
-    width: 100%;
+.detail-main .product-detail .img{
+    width: 50%;
+    background-size:cover;
+    
+}
+.detail-main  .detail h1{
+    width: 100;
+    font-size: 5rem;
+}
+.detail-main  .detail1 h2{
+    font-size: 3rem;
+    margin-top: 15px;
+}
+.detail-main .text-detail{
+    font-size: 2rem;
+}
+.detail-main  .detail span{
+    font-size: 24px;
+    text-decoration: line-through;
+}
+.detail-main  .detail .precio{
+    font-size: 3rem;
+}
+.detail-main  .detail small{
+    font-size: 24px;
+    color:blue
+}
+.detail-main  .detail button{
+    background-color: rgb(44, 37, 87,0.5);
+    color:black;
+    border:none;
+    border-radius: 5px;
+}
 
-}
-.detail-main .product-detail .sumar-carrito div{
-    background-color: aquamarine;
-    color:white;
+.detail-main .detail .sumar-carrito div{
+    background-color:aqua;
+    color:rgb(34, 9, 9);
     padding: 5px;
     display: flex;
+    font-size: 1.5rem;
+    font-weight: bolder;
     width: 10px; 
     border-radius: 5px;
     justify-content: center;
     align-items: center;
     width:30px;
     height:30px ;
+    margin: 0 10px;
 
 }
-.detail-main .product-detail .sumar-carrito input{
-width: 50px;
+.detail-main .detail .sumar-carrito input{
+    width: 50px;
 }
-.detail-main .product-detail .sumar-carrito{
-display:flex;
-margin-left: 20px;
+.detail-main .sumar-carrito{
+    width: 100%;
+    display:flex;
+}
+.detail-main .promotion aside{
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: flex-start;
+    
+}
+.detail-main .promotion p{     
+    margin-top: 15px;
+    font-size: 1.5rem;
+    
+}
+.detail-main .promotion aside h3{
+    width: 100%;
+    font-size: 3rem;
+    margin-top: 30px;
+
+}
+.detail-main .promotion aside article{
+    width: 30%;
 }

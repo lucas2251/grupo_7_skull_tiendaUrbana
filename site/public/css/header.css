@@ -56,3 +56,10 @@ header .content-header li i{
 header .content-header .nav-desktop{
     display: none;
 }
+header .content-header .nav-desktop ul li {}
+    
+header .content-header .nav-desktop ul li a {}
+
+@(min-width:769px){
+    
+}

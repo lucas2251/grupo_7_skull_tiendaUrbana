@@ -1,0 +1,27 @@
+body{
+    background-color: var(--colorVerdeClaro);
+}
+.detail-main .product-detail {
+    width: 100%;
+
+}
+.detail-main .product-detail .sumar-carrito div{
+    background-color: aquamarine;
+    color:white;
+    padding: 5px;
+    display: flex;
+    width: 10px; 
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width:30px;
+    height:30px ;
+
+}
+.detail-main .product-detail .sumar-carrito input{
+width: 50px;
+}
+.detail-main .product-detail .sumar-carrito{
+display:flex;
+margin-left: 20px;
+}

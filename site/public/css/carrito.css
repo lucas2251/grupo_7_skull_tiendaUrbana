@@ -42,10 +42,20 @@ body main section .sumar-carrito{
     margin: 10px 0;
 }
 body main section .sumar-carrito input{
- width: 5%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
 }
 body main section .sumar-carrito div{
     font-size: 16px;
+    background-color: var(--colorVerdeOscuro);
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    border-radius: 5px;
 }
 body main .precio{
     display: flex;

@@ -17,6 +17,9 @@
     margin-bottom: 10px;
     margin-right: 20px;
  }
+ body main section .back-carrito a{
+    color: black;
+ }
 body main section .tacho-carrito{
     display: flex;
     justify-content: right;
@@ -88,6 +91,7 @@ body main .total .total-neto{
 body main .boton-compra{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 body main .boton-compra article{
     display: flex;
@@ -106,12 +110,15 @@ body main .boton-compra .comprar{
     color: white;
     width: 40%;
     padding: 10px;
-    margin-left: 125px
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+}
+body main .boton-compra .comprar h2{
+    display: flex;
+    justify-content: center;
 }
 @media (min-width:426px){
-    body main .boton-compra .comprar{
-        margin-left: 230px;
-    }
     body main .producto{
         box-shadow: none;
     }

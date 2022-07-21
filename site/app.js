@@ -5,7 +5,6 @@ const liveReloadServer = livereload.createServer();
 const connectLivereload = require("connect-livereload");
 const express = require('express');
 const path = require('path');
-const { connect } = require("http2");
 const app = express();
 const port = 3000;
 

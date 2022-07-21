@@ -107,17 +107,19 @@ footer section ul li{
 @media (min-width:769px){
     footer{
         background-size: 8%;
+
     }
     .nav-footer{
         margin: 20px 30px;
+        display: flex;
+        justify-content: center;
     }
     .nav-footer ul{
         width: 100%;
         display: flex;
         flex-direction:row;
         flex-wrap:nowrap;
-        justify-content: space-between;
-        margin: 0 60px;
+        margin-right: 7%;
     }
     .nav-footer ul li{
         margin: 0 10px;

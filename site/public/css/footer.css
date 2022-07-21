@@ -1,6 +1,7 @@
 footer{
     background-image: url("/images/fondo4.png");
     background-size: 20%;
+border-top: 2px solid var(--colorVerdeOscuro);
 }
 footer section ul li a{
     text-decoration: none;
@@ -58,13 +59,16 @@ footer section ul li{
         background-size: 15%;
     }
     .nav-footer{
-        margin: 20px 30px;
+        margin: 20px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .nav-footer ul{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
     .logo-footer img{
         width: 20%;
@@ -72,14 +76,13 @@ footer section ul li{
     .icons-footer ul{
         display: flex;
         flex-wrap: wrap;
-        width: 60%;
-        height: 170px;
-        margin-left: 100px;
+        width: 100%;
+        height: 100%;
         
     }
     .icons-footer ul li{
         margin-top: 5px;
-        margin: 0 20px;
+        margin: 0 5%;
         font-size: 60px;
     }
     
@@ -89,6 +92,7 @@ footer section ul li{
 }
 .icon-mapa{
     display: flex;
+    justify-content: space-around;
 
 }
 .desc{
@@ -117,15 +121,16 @@ footer section ul li{
     }
     .nav-footer ul li{
         margin: 0 10px;
+        ;
     }
-
-
 
     .logo-footer img{
         width: 15%;
     }
     .icons-footer{
         display: flex;
+        justify-content: center;
+        
         
     }
     .icons-footer ul{

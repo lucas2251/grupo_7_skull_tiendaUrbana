@@ -3,11 +3,14 @@
 @import url('./general.css');
 @import url('./header.css');
 @import url('./footer.css');
+@import url('./contacto.css');
+
 @import url('./home.css');/* el home debe tener secciones mino ofertas,destacados,nuevos, tu ultima vicita,categoria extras,lo mas visitados, segun el tipo, segun el material, tipo de producto*/
 @import url('./detalle.css');/* hacer un producto  con los detalles que mas se le puedan poner,dentro de su categoria o sus categorias*/
 @import url('./carrito.css');/* tratemos de crear un carrito con un producto y no vacio,para saber las interacciones, mas que nada para ver el tamaño de las matricez */
 @import url('./login.css');/* login y registro tienen que compartir estilos asi no se ve mal */
 @import url('./register.css');/* aca se puede unificar los estilos de login y register, lo ideal es separarlos*/
+@import url('./404.css'); /* aca es donde la pagina debe redireccionar en caso del que cliente escriba una ruta no existente*/
 
 /* aca nosotros tenemos las 5 paginas pricnipales
 home

@@ -2,7 +2,7 @@
 @importurl();
 
 
-root{
+:root{
     /* Colores */
     --colorVerdeOscuro: #399B9B;
     --colorVerdeClaro: #77ABAB;

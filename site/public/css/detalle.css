@@ -115,23 +115,14 @@ body {
 .detail-main .icons-footer {
     width: 90%;
     margin: 0 auto;
-    padding: 20px;
-    /*   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-items:center ; 
- */
+    padding: 20px;  
     position: relative;
 }
 
-/* .detail-main .icons-footer .img1{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    /* position:absolute; */
-}
+/* Tablet */
+@media(min-width:461px)
 
-/* .detail-main .icons-footer ul{
-    align-items: flex-start;
-} */
+/* Desktop */
+@media(min-width:769px)
+
+

@@ -24,7 +24,7 @@ body .create-form{
     padding: 20px 15px;
 }
 
-.control-formulario{
+body .control-formulario{
     margin-bottom: 15px;
 }
 
@@ -32,4 +32,16 @@ body .control-formulario label{
     margin-bottom: 5px;
     font-style: italic;
     display: block;
+}
+body .control-formulario .control{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.boton-formulario{
+    background-color: var(--colorVerdeOscuro);
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
 }

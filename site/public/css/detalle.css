@@ -22,7 +22,7 @@ body main .back-carrito{
     font-size: 2.5rem;
 }
 .detail-main .precio span{
-    color: rgb(190, 66, 66);
+    color: var(--colorRojo);
     text-decoration: line-through ;
 }
 .detail-main .precio small{

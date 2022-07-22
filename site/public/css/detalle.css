@@ -140,7 +140,7 @@ body {
 
 /* Tablet */
 @media(min-width:461px){ 
-    body main .conteiner-detail article{
+    body main .conteiner-detail div{
         width: 50%;
         
     }
@@ -168,12 +168,59 @@ body {
     body main .conteiner-detail .detail .sumar div, input{
         height: 70%;
     }
+    body main .conteiner-detail .detail .sumar input{
+        width: 40%;
+    }
     
 }
 
 /* Desktop */
 @media(min-width:769px){
+    body main{
+        display: flex;
+        flex-direction: column;
+    }
+    body main .detail-section{
+        display: flex;
+    }
+    body main section .conteiner-detail{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        padding-top: 8%;
+    }
+    body main section .product-detail{
+        width: 80%;
+    }
+    body main section .conteiner-detail .detail{
+        width: 87%;
+        height: 40%;
+        margin-bottom: 60px;
+    }
+    
+    body main section .conteiner-detail .detail1 .text-detail{
+        width: 90%;
+    }
+    body main section .conteiner-detail .detail1{
+        height: 30%;
+    }
+    body main section .conteiner-detail .detail1 .text-detail p{
+        margin-bottom: 90px
+    }
+    body main .conteiner-detail .detail .sumar input{
+        width: 12%;
+        height: 100%;
+    }
+    body main .conteiner-detail .detail .sumar .button{
+        margin-left: 90%;
+    }
+    body main .conteiner-detail .detail .sumar{
+        font-size: 24px;
+    }
 
+    .detail-main .promotion aside article p{
+        font-size: 18px;
+    }
 }
 
 

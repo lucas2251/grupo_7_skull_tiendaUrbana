@@ -24,11 +24,14 @@
     <main>
         <p>¡Inicie sesión para comprar productos, agregarlos a su lista de deseos y seguir sus marcas favoritas!</p>
         <form action="" method="post" class="create-form">
-            <div class=""></div>
+            <div class="control-formulario">
             <label>Correo Electronico</label>
-            <input type="email" name="email" minlength="1" placeholder="Introduzca la dirección de correo electrónico" autocomplete="current-email" value="">
-            <p>contraseña</p>
+            <input type="email" name="email" minlength="1" placeholder="Introduzca la dirección de correo electrónico" autocomplete="current-email" value="" class="control">
+        </div>
+            <div class="control-formulario">
+            <label>contraseña</label>
             <input type="password" class="form__input form-logo-input form-logo-padding-input" id="password" name="password" placeholder="Ingresa tu contraseña" autocomplete="current-password" value="">
+            </div>
         </form>
         <button type="submit" >Iniciar Sesión</button>
         <p>¿Te olvidaste la contraseña?</p>

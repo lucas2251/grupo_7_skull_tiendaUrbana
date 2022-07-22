@@ -27,3 +27,9 @@ body .create-form{
 .control-formulario{
     margin-bottom: 15px;
 }
+
+body .control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}

@@ -34,6 +34,7 @@ body main section .imagen-carrito img{
     width: 100%;
     margin: 100px 0;
 }
+
 body main section .sumar-carrito{
     display: flex;
 }
@@ -132,7 +133,7 @@ body main .boton-compra .comprar h2{
         margin:5px;
     }
     body main section .sumar-carrito input{
-        width: 5%;
+        width: 7%;
     }
     body main .boton-compra p{
         font-size: 12px

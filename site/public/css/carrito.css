@@ -1,9 +1,9 @@
- body main .producto{
+.carrito body main .producto{
     display: flex;
     flex-direction: column;
     width: 95%;
     margin: auto;
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px var(--colorNegro);
  }
  body main .nav-carrito{
     display: flex;
@@ -18,7 +18,7 @@
     margin-right: 20px;
  }
  body main section .back-carrito a{
-    color: black;
+    color: var(--colorNegro);
  }
 body main section .tacho-carrito{
     display: flex;
@@ -28,7 +28,7 @@ body main section .tacho-carrito{
     margin-top: 20px;
     margin-bottom: 10px;
     margin-right: 20px;
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px var(--colorNegro);
 }
 body main section .imagen-carrito img{
     width: 100%;
@@ -55,7 +55,7 @@ body main section .sumar-carrito input{
 body main section .sumar-carrito div{
     font-size: 16px;
     background-color: var(--colorVerdeOscuro);
-    color: white;
+    color: var(--colorBlanco);
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ body section article .sin-envio{
     margin-top: 10px;
 }
 body main .total .total-neto{
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px var(--colorNegro);
     font-size: 16px;
     border: 2px solid var(--colorVerdeOscuro);
     margin:10px 20px;
@@ -124,9 +124,9 @@ body main .boton-compra article {
 
 
 body main .boton-compra .comprar{
-    box-shadow: 4px 4px 8px black;
+    box-shadow: 4px 4px 8px var(--colorNegro);
     background-color: var(--colorVerdeOscuro);
-    color: white;
+    color: var(--colorBlanco);
     width: 40%;
     padding: 10px;
     display: flex;
@@ -142,7 +142,7 @@ body main .boton-compra .comprar h2{
         box-shadow: none;
     }
     body main section .imagen-carrito{
-        box-shadow: 4px 4px 8px black;
+        box-shadow: 4px 4px 8px var(--colorNegro);
     }
     body main section .desc-carrito{
         margin-top: 15px;
@@ -237,7 +237,7 @@ body main section .sumar-carrito input{
     margin-top: 40px;
    }
    body main section .envio .descuento-carrito .porcentaje-descuento{
-    color: white;
+    color: var(--colorBlanco);
     background-color: var(--colorVerdeSapito);
     padding: 5px;
     border-radius: 5%;

@@ -81,12 +81,12 @@ body main section .envio .descuento-carrito{
     margin-top: 10px;
 }
 body main section .envio .descuento-carrito .total-descuento{
-    color: rgb(190, 66, 66);
+    color:var(--colorRojo) ;
     text-decoration:line-through;
     font-size: 18px;
 }
 body main section .envio .descuento-carrito .porcentaje-descuento{
-    color: rgb(66, 168, 66);
+    color: var(--colorVerdeSapito)
 }
 body section article .suma-envio{
     display: flex;
@@ -238,7 +238,7 @@ body main section .sumar-carrito input{
    }
    body main section .envio .descuento-carrito .porcentaje-descuento{
     color: white;
-    background-color: rgb(66, 168, 66);
+    background-color: var(--colorVerdeSapito);
     padding: 5px;
     border-radius: 5%;
 }

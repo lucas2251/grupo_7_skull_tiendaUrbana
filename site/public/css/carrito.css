@@ -68,9 +68,25 @@ body main .precio{
     margin-right: 20px;
     margin-top: 20px;
     font-size: 18px;
+    
 }
-body section .envio{
+body main section .envio{
     margin-left: 7px;
+}
+body main section .envio .descuento-carrito{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+body main section .envio .descuento-carrito .total-descuento{
+    color: rgb(190, 66, 66);
+    text-decoration:line-through;
+    font-size: 18px;
+}
+body main section .envio .descuento-carrito .porcentaje-descuento{
+    color: rgb(66, 168, 66);
 }
 body section article .suma-envio{
     display: flex;
@@ -88,6 +104,8 @@ body main .total .total-neto{
     font-size: 16px;
     border: 2px solid var(--colorVerdeOscuro);
     margin:10px 20px;
+    display: flex;
+    justify-content: space-between;
 }
 body main .boton-compra{
     display: flex;
@@ -183,6 +201,7 @@ body main section .desc-carrito{
 }
 body main section .sumar-carrito{
     margin-top: 30px;
+    box-shadow:  2px 2px 2px 2px var(--colorVerdeOscuro);
 }
 body main section .sumar-carrito input{
     width: 20%;
@@ -217,4 +236,10 @@ body main section .sumar-carrito input{
    body main section .tacho-carrito{
     margin-top: 40px;
    }
+   body main section .envio .descuento-carrito .porcentaje-descuento{
+    color: white;
+    background-color: rgb(66, 168, 66);
+    padding: 5px;
+    border-radius: 5%;
+}
 }

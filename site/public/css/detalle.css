@@ -3,7 +3,11 @@ body {
     padding: 5%;
 }
 
-
+body main .back-carrito{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 .detail-main .product-detail .img {
     width: 85%;
@@ -22,7 +26,7 @@ body {
     text-decoration: line-through ;
 }
 .detail-main .precio small{
-    color: rgb(66, 168, 66);
+    color: var(--colorVerdeSapito);
 }
 .detail-main img {
     width: 100%;

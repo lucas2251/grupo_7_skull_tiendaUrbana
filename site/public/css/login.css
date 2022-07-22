@@ -19,3 +19,7 @@ body header .content-header .arrow{
     color: var(--colorBlanco);
   
 }
+
+body .create-form{
+    padding: 20px 15px;
+}

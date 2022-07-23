@@ -1,7 +1,8 @@
 footer{
     background-image: url("/images/fondo4.png");
-    background-size: 20%;
-border-top: 2px solid var(--colorVerdeOscuro);
+    background-size:10%;
+border-top: 3px solid var(--colorVerdeOscuro);
+background-color: #000000;
 }
 footer section ul li a{
     text-decoration: none;

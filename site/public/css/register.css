@@ -19,3 +19,35 @@ body header .content-header .arrow{
     color: var(--colorBlanco);
   
 }
+
+body .create-form{
+    padding: 20px 15px;
+}
+
+body .control-formulario{
+    margin-bottom: 15px;
+}
+
+body .control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+body .control-formulario .control{
+    width: 100%;
+    padding: 8px 8px;
+}
+
+body .boton-formulario{
+    background-color: var(--colorVerdeOscuro);
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+body .parrafo-form{
+    padding: 12px;
+    font-size: 2rem;
+}
+

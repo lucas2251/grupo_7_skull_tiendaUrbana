@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicia sesión</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrate con nosotros</title>
     <script src="https://kit.fontawesome.com/360f664bcf.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
+
 <body>
     <header>
         <div class="content-header">
-            <div ="arrow">
-                <p><i class="fas fa-arrow-left"></i> atras</p>
+            <div ="arrow" class="arrow">
+                <p class="arrow"><i class="fas fa-arrow-left"></i> atras</p>
             </div>
-            
         <a href="/" class="logo">
             <img src="/images/SKULL-logo-sin-fondo.png" alt="logo skull tienda urbana" >
         </a>
     </div>
     </header>
     <main>
-        <p>¡Inicie sesión para comprar productos, agregarlos a su lista de deseos y seguir sus marcas favoritas!</p>
-        <form action="" method="post">
-            <p>Correo Electronico</p>
-            <input type="email" name="email" minlength="1" placeholder="Introduzca la dirección de correo electrónico" autocomplete="current-email" value="">
-            <p>contraseña</p>
-            <input type="password" class="form__input form-logo-input form-logo-padding-input" id="password" name="password" placeholder="Ingresa tu contraseña" autocomplete="current-password" value="">
+        <div class="parrafo-form">
+            <p>¡Bienvenido a Skull Tienda Urbana!</p>
+            <p>
+                ¡Crea una cuenta para realizar compras, crear listas de deseos y
+                seguir a tus marcas favoritas!
+            </p>
+        </div>
+        <form action="" method="post" class="create-form">
+            <div class="control-formulario">
+                <label>Correo Electronico:</label>
+                <input type="email" name="email" minlength="1"
+                    placeholder="Introduzca la dirección de correo electrónico" autocomplete="current-email" value=""
+                    class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Contraseña:</label>
+                <input type="password" name="password" placeholder="Ingresa tu contraseña"
+                    autocomplete="current-password" value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Confirmar Contraseña:</label>
+                <input type="password" name="password" placeholder="Ingresa tu contraseña"
+                    autocomplete="current-password" value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre"
+                     value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Apellido:</label>
+                <input type="text" name="nombre" placeholder="Ingresa tu Apellido"
+                     value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>DNI:</label>
+                <input type="number" name="dni" placeholder="Ingresa tu DNI"
+                     value="" class="control" />
+            </div>
+            <button type="submit" class="boton-formulario">Crear mi cuenta</button>
+
+            
         </form>
-        <button type="submit" >Iniciar Sesión</button>
-        <p>¿Te olvidaste la contraseña?</p>
-        <p>Al suscribirte y/o crear una cuenta a través de Facebook, Google y/o Apple, aceptas los Términos y condiciones de SKULL Tienda urbana y  la Política de privacidad</p>
+
+        <div class="parrafo-form">
+            <p>Regístrese para recibir las noticias de SKULL Tienda Urbana y obtenga un cupón de $ 1500 para su próxima compra. Recibirás alertas de ventas, ofertas exclusivas y lo último en estilos y tendencias.</p>
+            <p>
+                Al suscribirte y/o crear una cuenta, aceptas los  Términos y condiciones de SKULL Tienda Urbana y  la Política de privacidad .
+            </p>
     </main>
 </body>
+
 </html>

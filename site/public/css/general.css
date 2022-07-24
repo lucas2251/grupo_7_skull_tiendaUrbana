@@ -14,12 +14,10 @@ html{
 body{
     min-width: 425px;
 }
-
-li{
-    list-style: none;
-}
-
 a{
     text-decoration: none;
-    color: black;
+    color:var(--colorBlanco) ;
+}
+li{
+    list-style: none;
 }

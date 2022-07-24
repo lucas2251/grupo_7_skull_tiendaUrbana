@@ -5,7 +5,6 @@ const liveReloadServer = livereload.createServer();
 const connectLivereload = require("connect-livereload");
 const express = require('express');
 const path = require('path');
-const { connect } = require("http2");
 const app = express();
 const port = 3000;
 
@@ -21,6 +20,8 @@ app.get('/detalle',(req,res) => res.sendFile(path.resolve(__dirname,'views','det
 app.get('/carrito',(req,res) => res.sendFile(path.resolve(__dirname,'views','carrito.html')));
 app.get('/login',(req,res) => res.sendFile(path.resolve(__dirname,'views','login.html')));
 app.get('/register',(req,res) => res.sendFile(path.resolve(__dirname,'views','register.html')));
+app.get('/contacto',(req,res) => res.sendFile(path.resolve(__dirname,'views','contacto.html')));
+app.get("*",(req,res) => res.sendFile(path.resolve(__dirname, 'views','404.html')))
 
 liveReloadServer.server.once("connection",() => {
     setTimeout(() => {

@@ -1,3 +1,16 @@
+footer{
+    background-image: url("/images/fondo4.png");
+    background-size: 20%;
+border-top: 2px solid var(--colorVerdeOscuro);
+}
+footer section ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer section ul li{
+    list-style: none;
+}
+
 .nav-footer{
     list-style: none;
     display: flex;
@@ -16,7 +29,7 @@
 .mapa{
     display: none;
 }
-.desc-mapa{
+.desc{
     display: none;
 }
 .icons-footer ul{
@@ -27,33 +40,125 @@
 .icons-footer ul li{
     margin: 0 15px;
 }
+.icons-footer ul li a{
+    background-color: white;
+}
 .logo-footer{
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+    margin-top: 10px;
+}
 .logo-footer img{
     width: 30%;
 }
 @media (min-width:426px){
+    footer{
+        background-size: 15%;
+    }
     .nav-footer{
-        margin: 20px 30px;
+        margin: 20px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .nav-footer ul{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
     .logo-footer img{
         width: 20%;
     }
+    .icons-footer ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .icons-footer ul li{
+        margin-top: 5px;
+        margin: 0 5%;
+        font-size: 60px;
+    }
+    
 .mapa{
     display: flex;
-    justify-content: center;
+    margin-left: 50px;
 }
-.desc-mapa{
+.icon-mapa{
+    display: flex;
+    justify-content: space-around;
+
+}
+.desc{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-left: 40%;
+    font-size: 12px;
 }
+
+
     
+}
+@media (min-width:769px){
+    footer{
+        background-size: 8%;
+
+    }
+    .nav-footer{
+        margin: 20px 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-footer ul{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        margin-right: 7%;
+    }
+    .nav-footer ul li{
+        margin: 0 10px;
+        ;
+    }
+
+    .logo-footer img{
+        width: 15%;
+    }
+    .icons-footer{
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .icons-footer ul{
+        display: flex;
+        width: 80%;
+        margin-bottom: 0px;
+        height: 90px;
+    
+    }
+    .icons-footer ul li{
+        margin-top: 5px;
+        margin: 0 30px;
+        font-size: 60px;
+    }
+    
+.mapa{
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+.icon-mapa{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
 }

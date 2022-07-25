@@ -1,7 +1,6 @@
 footer{
     background-image: url("/images/fondo4.png");
-    background-size: 20%;
-border-top: 2px solid var(--colorVerdeOscuro);
+    background-size:10%;
 }
 footer section ul li a{
     text-decoration: none;
@@ -21,6 +20,9 @@ footer section ul li{
     text-align: center;
     width: 322px;
     height: 34px;
+    background: #000000;
+    border: 1px solid #6DD6B0;
+    margin: 5px 0;
 }
 .nav-footer li a{
     color: white;
@@ -117,7 +119,7 @@ footer section ul li{
         display: flex;
         flex-direction:row;
         flex-wrap:nowrap;
-        margin-right: 7%;
+        margin-right: 6%;
     }
     .nav-footer ul li{
         margin: 0 10px;

@@ -1,67 +1,65 @@
-.detalle body {  
+body .detalle {  
     font-family: var(--fuente-Fredoka);
     padding: 5%;
 }
 
-body main .back-carrito{
+body .detalle .back-carrito{
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.detail-main .product-detail .img {
+.detalle .product-detail .img {
     width: 85%;
     box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
     margin: 0 auto;
     margin-top: 10px;
 
 }
-.detail-main .precio{
+.detalle .precio{
     width: 85%;
     margin: 0 auto;
     font-size: 2.5rem;
 }
-.detail-main .precio span{
+.detalle .precio span{
     color: var(--colorRojo);
     text-decoration: line-through ;
 }
-.detail-main .precio small{
+.detalle .precio small{
     color: var(--colorVerdeSapito);
 }
-.detail-main img {
+.detalle img {
     width: 100%;
 }
 
-.detail-main .img h1 {
+.detalle .img h1 {
     width: 100%;
     font-size: 2.8rem;    
 }
-.detail-main .detail1{
+.detalle .detail1{
     width: 85%;
     box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
   
     margin: 0 auto;
 
 }
-.detail-main .detail1 h2 {
+.detalle .detail1 h2 {
     font-size: 2rem;
     margin-top: 15px;
 }
 
-.detail-main .text-detail {
+.detalle .text-detail {
     font-size: 2rem;
-   
-   
 }  
 
 
-.detail-main .detail .precio {
+.detalle .detail .precio {
     font-size: 3rem;
 }
 
 
 
-.detail-main .detail button {
+.detalle .detail button {
     background-color: var(--colorVerdeOscuro);
     font-size: 1.5rem;
     color: var(--colorBlanco);
@@ -72,7 +70,7 @@ body main .back-carrito{
     box-shadow: 2px 2px 4px var(--colorNegro);
 }
 
-.detail-main .detail .sumar div {
+.detalle .detail .sumar div {
     background-color:var(--colorVerdeOscuro);
     color:var(--colorNegro);
     padding: 5px;
@@ -91,25 +89,25 @@ body main .back-carrito{
 
 }
 
-.detail-main .detail .sumar input {
+.detalle .detail .sumar input {
     width:65px;
     margin-bottom: 5px;
 
 }
 
-.detail-main .sumar{
+.detalle .sumar{
     width: 85%;
     display: flex;
     justify-content: center;
 }
-.detail-main .promotion{
+.detalle .promotion{
     width: 85%;
     margin: 0 auto;
     box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
     padding-bottom: 5px;
 }
 
-.detail-main .promotion aside {
+.detalle .promotion aside {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -117,25 +115,24 @@ body main .back-carrito{
 
 }
 
-.detail-main .img p {
+.detalle .img p {
     margin-top: 15px;
     font-size: 3rem;
 
 }
 
-.detail-main .promotion aside h3 {
+.detalle .promotion aside h3 {
     width: 100%;
     font-size: 2rem;
     margin-top: 30px;
 
 }
 
-.detail-main .promotion p {
+.detalle .promotion p {
     margin-top: 10px;
     font-size: 1.5rem;
 }
-
-.detail-main .icons-footer {
+.detalle .icons-footer {
     width: 90%;
     margin: 0 auto;
     padding: 20px;  
@@ -144,35 +141,32 @@ body main .back-carrito{
 
 /* Tablet */
 @media(min-width:461px){ 
-    body main .conteiner-detail div{
+    .conteiner-detail div{
         width: 50%;
-        
     }
 
-    body main .conteiner-detail{
+    .detalle .conteiner-detail{
         display: flex;
         width: 85%;
         margin: 0 auto;
         flex-direction: row-reverse;
     }
-    body main .conteiner-detail .detail{
+    .detalle .conteiner-detail .detail{
         box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
         margin-left: 5%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-    body main .conteiner-detail .detail .precio{
-        margin-right: 12%;
-    }
-    body main .conteiner-detail .detail .sumar button{
+    
+    .detalle .conteiner-detail .detail .sumar button{
         margin-bottom: 5px;
         font-size: 13px;
     }
-    body main .conteiner-detail .detail .sumar div, input{
+    .detalle .conteiner-detail .detail .sumar div, input{
         height: 70%;
     }
-    body main .conteiner-detail .detail .sumar input{
+    .detalle .conteiner-detail .detail .sumar input{
         width: 40%;
     }
     
@@ -180,51 +174,50 @@ body main .back-carrito{
 
 /* Desktop */
 @media(min-width:769px){
-    body main{
+    .detalle{
         display: flex;
         flex-direction: column;
     }
-    body main .detail-section{
+    .detalle .detail-section{
         display: flex;
     }
-    body main section .conteiner-detail{
+    .detalle section .conteiner-detail{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
         padding-top: 8%;
     }
-    body main section .product-detail{
+    .detalle section .product-detail{
         width: 80%;
     }
-    body main section .conteiner-detail .detail{
+    .detalle section .conteiner-detail .detail{
         width: 87%;
         height: 40%;
         margin-bottom: 60px;
     }
     
-    body main section .conteiner-detail .detail1 .text-detail{
+    .detalle section .conteiner-detail .detail1 .text-detail{
         width: 90%;
     }
-    body main section .conteiner-detail .detail1{
+    .detalle section .conteiner-detail .detail1{
         height: 30%;
     }
-    body main section .conteiner-detail .detail1 .text-detail p{
+    .detalle section .conteiner-detail .detail1 .text-detail p{
         margin-bottom: 90px
     }
-    body main .conteiner-detail .detail .sumar input{
+    .detalle .conteiner-detail .detail .sumar input{
         width: 12%;
         height: 100%;
     }
-    body main .conteiner-detail .detail .sumar .button{
+    .detalle .conteiner-detail .detail .sumar .button{
         margin-left: 90%;
     }
-    body main .conteiner-detail .detail .sumar{
+    .detalle .conteiner-detail .detail .sumar{
         font-size: 24px;
     }
 
-    .detail-main .promotion aside article p{
+    .detalle .promotion aside article p{
         font-size: 18px;
     }
 }
-
 

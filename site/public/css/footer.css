@@ -137,8 +137,6 @@ footer section ul li{
     }
     .icons-footer ul{
         display: flex;
-        width: 80%;
-        margin-bottom: 0px;
         height: 90px;
     
     }
@@ -156,11 +154,18 @@ footer section ul li{
 .icon-mapa{
     display: flex;
     flex-direction: column-reverse;
+    
 
+}
+.icon-mapa article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .desc{
     display: flex;
-    flex-direction: column;
     font-size: 16px;
+    justify-content: center;
+    margin-left: 41%;
 }
 }

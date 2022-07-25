@@ -3,10 +3,14 @@ body .detalle {
     padding: 5%;
 }
 
-body .detalle .back-carrito{
+.back-inicio{
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+.back-inicio a{
+    color: var(--colorNegro);
+    text-decoration: none;
 }
 
 .detalle .product-detail .img {
@@ -87,6 +91,10 @@ body .detalle .back-carrito{
     margin-top: 1%;
     box-shadow: 2px 2px 4px var(--colorNegro)
 
+}
+.detalle .detail .sumar button a{
+    color: var(--colorBlanco);
+    text-decoration: none;
 }
 
 .detalle .detail .sumar input {

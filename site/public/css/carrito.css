@@ -19,6 +19,8 @@
  }
  .carrito section .back-carrito a{
     color: var(--colorNegro);
+    text-decoration: none;
+    font-size: 18px;
  }
  .carrito  section .tacho-carrito{
     display: flex;
@@ -153,7 +155,10 @@
     }
     .carrito  section .sumar-carrito input{
         width: 7%;
+        height: 30px;
+        
     }
+    
     .carrito  .boton-compra p{
         font-size: 12px
     }

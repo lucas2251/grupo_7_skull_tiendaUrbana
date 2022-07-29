@@ -105,12 +105,3 @@ header .content-header .nav-desktop ul li a {}
         color:var(--colorBlanco)
     }
 }
-
-@media(min-width:1080px)
-{
-    .header .content-header .nav-desktop ul{
-        display: flex;
-        justify-content: space-between;
-        border-top: solid 1px var(--colorVerdeOscuro);
-    }
-}

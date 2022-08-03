@@ -1,6 +1,6 @@
 .carrito  .producto{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 95%;
     margin: auto;
     box-shadow: 4px 4px 8px var(--colorNegro);
@@ -25,19 +25,26 @@
  }
  .carrito  section .tacho-carrito{
     display: flex;
-    justify-content: right;
+    width: 30%;
     font-size: 30px;
+    margin-right: 5px;
     padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-right: 20px;
     box-shadow: 4px 4px 8px var(--colorNegro);
 }
-.carrito  section .imagen-carrito img{
-    width: 100%;
-    margin: 100px 0;
+.carrito  section .imagen-carrito{
+    width: 30%;
+    ;
 }
-
+.carrito  section .imagen-carrito img{
+    width: 115%;
+    margin: 55px 0;
+    rotate: 90deg;
+}
+.carrito section .interaccion-carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .carrito  section .sumar-carrito{
     display: flex;
 }
@@ -51,10 +58,17 @@
     margin: 10px 0;
 }
 .carrito section .sumar-carrito input{
-    width: 10%;
+    width: 20%;
     text-align: center;
 
 }
+.carrito section .precio-tacho-carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: flex-end;
+} 
 .carrito section .sumar-carrito div{
     font-size: 16px;
     background-color: var(--colorVerdeOscuro);
@@ -67,9 +81,7 @@
 }
 .carrito  .precio{
     display: flex;
-    justify-content: right;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 2px;
     font-size: 18px;
 }
 .carrito section .envio{

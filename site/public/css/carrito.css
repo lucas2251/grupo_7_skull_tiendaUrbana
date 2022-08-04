@@ -154,29 +154,42 @@
 }
 @media (min-width:426px){
     .carrito .producto{
-        box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    }
+    
+    .carrito section .imagen-carrito img{
+        width: 100%;
+        rotate: none
     }
     .carrito section .imagen-carrito{
-        box-shadow: 4px 4px 8px var(--colorNegro);
+        margin-left: 5%;
     }
+
     .carrito  section .desc-carrito{
         margin-top: 15px;
+
+    }
+    .carrito  section .marco-carrito{
+        border: 2px solid var(--colorVerdeOscuro);
+        border-radius: 6px
     }
     .carrito  section .sumar-carrito div{
         margin:5px;
     }
     .carrito  section .sumar-carrito input{
-        width: 7%;
+        width: 20%;
         height: 30px;
+        margin-top: 3px;
         
     }
     
     .carrito  .boton-compra p{
         font-size: 12px
     }
-    .carrito section .interaccion-carrito{
-        border-bottom: 2px solid var(--colorVerdeOscuro);
-    } 
+    
     .carrito .precio{
         margin-top: 10px;
     }

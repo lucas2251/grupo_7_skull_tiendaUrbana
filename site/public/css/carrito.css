@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     width: 95%;
-    margin: auto;
+    margin: 20px auto;
     box-shadow: 4px 4px 8px var(--colorNegro);
  }
  .carrito  .nav-carrito{
@@ -174,7 +174,8 @@
     }
     .carrito  section .marco-carrito{
         border: 2px solid var(--colorVerdeOscuro);
-        border-radius: 6px
+        border-radius: 6px;
+        margin: 5px;
     }
     .carrito  section .sumar-carrito div{
         margin:5px;
@@ -201,39 +202,25 @@
 
 
 @media (min-width:769px){
-    .carrito  .producto{
-        display: flex;
-        flex-direction:row;
-        width: 95%;
-        justify-content: space-around;
-        margin: auto;
-        border-top: 2px solid var(--colorVerdeOscuro);
-     }
-     .carrito main section .imagen-carrito img{
+.carrito main section .imagen-carrito img{
         width: 100%;
 
 }
 .carrito section .imagen-carrito{
-    width: 45%;
-    margin-top: 10px;
+    width: 40%;
+    margin-top: 1%;
 
 }
 .carrito  section .tacho-carrito{
-    position: relative;
-    font-size: 40px;
-    top: 90px;
-    right: 30px;
+position: relative;
+right: 5px;
+padding: 2px;
+box-shadow: 2px 2px 4px var(--colorVerdeOscuro)
 }
-.carrito section .desc-carrito{
-    font-size: 14px;
-    margin-top:90%;
-    margin-left: 10px;
-    height: 20px;
+.carrito  section .marco-carrito{
+    box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
 }
-.carrito  section .sumar-carrito{
-    margin-top: 30px;
-    box-shadow:  2px 2px 2px 2px var(--colorVerdeOscuro);
-}
+
 .carrito  section .sumar-carrito input{
     width: 20%;
     height: 100%;
@@ -242,14 +229,9 @@
    }
    .carrito  .producto .interaccion-carrito{
     margin-right: 10%;
-    border-bottom: none;
-    position: relative;
-    bottom: 70px;
+    margin-left: 5%;
    }
-   .carrito  .precio{
-    margin-right: 50px;
-    margin-bottom: 10px;
-   }
+   
    .carrito  .total{
     width: 80%;
     margin: auto;
@@ -264,16 +246,11 @@
    .carrito  .boton-compra .comprar{
     margin-left: 30%;
    }
-   .carrito  section .tacho-carrito{
-    margin-top: 40px;
-   }
    .carrito section .envio .descuento-carrito .porcentaje-descuento{
     color: var(--colorBlanco);
     background-color: var(--colorVerdeSapito);
     padding: 5px;
     border-radius: 5%;
 }
-.carrito  .precio{
-    width: 90%;
-}
+
 }

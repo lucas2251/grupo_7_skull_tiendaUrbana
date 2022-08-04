@@ -1,7 +1,7 @@
 .carrito  .producto{
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 85%;
     margin: 20px auto;
     box-shadow: 4px 4px 8px var(--colorNegro);
  }
@@ -158,6 +158,7 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    width: 75%;
     }
     
     .carrito section .imagen-carrito img{
@@ -191,11 +192,17 @@
         font-size: 12px
     }
     
-    .carrito .precio{
-        margin-top: 10px;
-    }
     .carrito .total .total-neto{
-        border: 2px solid var(--colorVerdeOscuro);}
+        border: 2px solid var(--colorVerdeOscuro);
+    }
+    .carrito .total{
+        width: 75%;
+    }
+    .carrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 

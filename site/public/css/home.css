@@ -83,7 +83,7 @@
 
 /* Tablet */
 
-@media (min-width: 460px){
+@media (min-width: 426px){
 .home main .banner{
         display: block;
         width: 100%
@@ -126,10 +126,10 @@
 
 /* Desktop */
 
-@media (min-width: 768px){
-    .home{
+@media (min-width: 769px){
+    /* .home{
         max-width: 1180px;
-    }
+    } */
 
     .home main section article{
     width: 20%;

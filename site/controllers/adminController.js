@@ -1,5 +1,5 @@
 
-/*module.exports = {
+module.exports = {
     list: (req,res) => {
         return res.render('admin/listaProductos')
     },
@@ -12,6 +12,6 @@
             return elemento.id == id
         }) */
         /* return res.send(producto) Comprobar que esta llegando bien el elemento*/
-  /*      return res.render('admin/editarProducto')
+       return res.render('admin/editarProducto')
     },
-}*/
+}

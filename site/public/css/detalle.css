@@ -192,7 +192,10 @@ body .detalle {
         flex-direction: column;
         justify-content: space-around;
     }
-    
+    .detalle .conteiner-detail .detail .precio{
+        display: flex;
+        flex-direction: column;
+    }
     .detalle .conteiner-detail .detail .sumar button{
         margin-bottom: 5px;
         font-size: 13px;

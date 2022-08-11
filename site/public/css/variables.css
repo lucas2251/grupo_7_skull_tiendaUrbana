@@ -1,5 +1,10 @@
+
+/* Fuente a utilzar */
+/* @importurl(); */
+
 /* Fuente a utilzar 
 @importurl();*/
+
 
 
 :root{
@@ -9,9 +14,11 @@
     --colorRosa: #C2789C;
     --colorGris: #4F6162;
     --colorNegro: #201D23;
+
     --colorVerdeSapito: #42a842;
     --colorRojo: #be4242;
     --colorBlanco:#ffffff;
+
 
     /* Fuentes */
     --fuente-Fredoka: 'Fredoka', sans-serif;

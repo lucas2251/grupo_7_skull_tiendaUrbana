@@ -1,7 +1,7 @@
 body header {
     width: 100%;
     box-shadow: 2px 2px 4px black;
-    background-color: black/* var(--colorNegro) */;
+    background-color: var(--colorNegro);
     color: var(--colorBlanco);
 }
 
@@ -49,3 +49,28 @@ body .boton-formulario{
 body .parrafo-form{
     padding: 12px;
 }
+
+/* Tablet */
+@media(min-width:461px){ 
+   
+    body .control-formulario .control{
+        max-width: 80%;
+    }
+
+
+    /* Desktop */
+@media(min-width:769px){
+    body .control-formulario .control{
+        max-width: 40%;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
+
+    }
+    body .control-formulario{
+        text-align: center;
+    }
+    body .create-form .boton-formulario{
+        display: block;
+        margin: 0 auto;
+    }
+
+}}

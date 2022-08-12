@@ -8,7 +8,7 @@ app.use(express.static(path.resolve(__dirname,'public')));
 
 /* Requerir las rutas */
 let indexRouter = require('./routes/index')
-//let administradorRouter = require('./routes/administrador')
+let administradorRouter = require('./routes/administrador')
 let productosRouter = require('./routes/productos')
 let usuariosRouter = require('./routes/usuarios')
 let nosotrosRouter = require('./routes/nosotros')
@@ -25,7 +25,9 @@ app.use(express.static(path.resolve(__dirname,'public')))
 app.use('/', indexRouter);
 app.use('/usuarios', usuariosRouter);
 app.use('/productos', productosRouter);
+app.use('/administrador',administradorRouter);
 app.use('/nosotros', nosotrosRouter);
-//app.use('/administrador',administradorRouter);
+app.use('/administrador',administradorRouter);
+
 
 app.listen(port,() => console.log(`Servidor corriendo en http://localhost:${port}`));

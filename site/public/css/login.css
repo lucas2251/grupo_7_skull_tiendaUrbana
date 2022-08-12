@@ -5,6 +5,10 @@ body header {
     color: var(--colorBlanco);
 }
 
+body .slogan{
+    width: 95%;
+}
+
 body header .content-header{
     width: 90%;
     margin: 0 auto;
@@ -36,6 +40,7 @@ body .control-formulario label{
 body .control-formulario .control{
     width: 100%;
     padding: 8px 8px;
+    box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
 }
 
 body .boton-formulario{
@@ -55,6 +60,7 @@ body .parrafo-form{
    
     body .control-formulario .control{
         max-width: 80%;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
     }
 
 

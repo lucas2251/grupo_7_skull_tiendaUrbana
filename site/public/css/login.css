@@ -1,8 +1,12 @@
 body header {
     width: 100%;
     box-shadow: 2px 2px 4px black;
-    background-color: black/* var(--colorNegro) */;
+    background-color: var(--colorNegro);
     color: var(--colorBlanco);
+}
+
+body .slogan{
+    width: 95%;
 }
 
 body header .content-header{
@@ -36,6 +40,7 @@ body .control-formulario label{
 body .control-formulario .control{
     width: 100%;
     padding: 8px 8px;
+    box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
 }
 
 body .boton-formulario{
@@ -49,3 +54,29 @@ body .boton-formulario{
 body .parrafo-form{
     padding: 12px;
 }
+
+/* Tablet */
+@media(min-width:461px){ 
+   
+    body .control-formulario .control{
+        max-width: 80%;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
+    }
+
+
+    /* Desktop */
+@media(min-width:769px){
+    body .control-formulario .control{
+        max-width: 40%;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
+
+    }
+    body .control-formulario{
+        text-align: center;
+    }
+    body .create-form .boton-formulario{
+        display: block;
+        margin: 0 auto;
+    }
+
+}}

@@ -5,40 +5,45 @@
 <body>
     <%- include('../partials/header') %>
     <h1 class="titulo">Crear Productos</h1>
-    <main>
+    <main class="crear">
         <div class="parrafo-form">
-            <p class="saludo">¡Bienvenido a Skull Tienda Urbana!</p>           
+            <p class="saludo">¡Bienvenidx ADMIN!</p>           
         </div>
         <form action="" method="post" class="create-form">
             <div class="control-formulario">
                 <label>Marca</label>
-                <input type="email" name="email" minlength="1"
-                    placeholder="Introduzca la marca del producto" autocomplete="current-email" value=""
+                <input type="name" name="marca" minlength="1"
+                    placeholder="Introduzca la marca del producto" value=""
                     class="control" />
             </div>
             <div class="control-formulario">
                 <label>Título</label>
-                <input type="password" name="password" placeholder="Ingrese el título"
+                <input type="name" name="name" placeholder="Ingrese el título"
                     autocomplete="current-password" value="" class="control" />
             </div>
             <div class="control-formulario">
-                <label>Categoría</label>
-                <input type="password" name="password" placeholder="Skate - Longboard - Accesorios"
-                    autocomplete="current-password" value="" class="control" />
+                <label for="floatingSelect">Categoria</label>
+                <select class="control" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected hidden>Selecciona una opcion</option>
+                    <option value="Skates">Skates</option>
+                    <option value="Longboards">Longboards</option>
+                    <option value="Accesorios">Accesorios</option>
+                    <option value="Partes">Partes</option>
+                  </select>
             </div>
             <div class="control-formulario">
                 <label>Precio</label>
-                <input type="text" name="nombre" placeholder="Ingrese el precio"
+                <input type="number" name="nombre" placeholder="Ingrese el precio"
                      value="" class="control" />
             </div>
             <div class="control-formulario">
                 <label>Descuento</label>
-                <input type="text" name="nombre" placeholder="Ingrese el procentaje de descuento"
+                <input type="number" name="nombre" placeholder="Ingrese el procentaje de descuento"
                      value="" class="control" />
             </div>
             <div class="control-formulario">
                 <label>Stock</label>
-                <input type="text" name="nombre" placeholder="Ingrese el stock"
+                <input type="number" name="nombre" placeholder="Ingrese el stock"
                      value="" class="control" />
             </div>
             <div class="control-formulario">
@@ -49,7 +54,7 @@
             <div class="control-formulario">
                 <label>Imagen</label>
                 <input class="imagen" - type="file" name="imagen" placeholder="Introduzca la imagen del producto"
-                     value="" class="control" />
+                     value="" class="control"  multiple/>
             </div>
             
             <button type="submit" class="boton-formulario">Crear Producto</button>

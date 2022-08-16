@@ -1,8 +1,14 @@
-
+let accesorios = require("../data/accesorios.json");
+let longboards = require("../data/longboards.json");
+let skates = require("../data/skates.json")
 
 module.exports = {
     listar: (req,res) => {
-        return res.render('admin/listar')
+        return res.render('admin/listar', {
+            accesorios, 
+            longboards,
+            skates
+        })
     },
     crear:(req,res) => {
         return res.render('admin/crear')

@@ -19,6 +19,8 @@
 /* aca es donde la pagina debe redireccionar en caso del que cliente escriba una ruta no existente*/
 @import url('./crear.css');
 
+@import url('./listar.css');
+
 /* aca nosotros tenemos las 5 paginas principales
 hogar
 detalle

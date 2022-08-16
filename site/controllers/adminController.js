@@ -1,6 +1,11 @@
 let accesorios = require("../data/accesorios.json");
 let longboards = require("../data/longboards.json");
-let skates = require("../data/skates.json")
+let skates = require("../data/skates.json");
+let lijas = require("../data/partes/lijas.json");
+let otros = require("../data/partes/otros.json");
+let ruedas = require("../data/partes/ruedas.json");
+let tablas = require("../data/partes/tablas.json");
+let trucks = require("../data/partes/trucks.json")
 
 module.exports = {
 
@@ -9,7 +14,12 @@ module.exports = {
         return res.render('admin/listar', {
             accesorios, 
             longboards,
-            skates
+            skates,
+            lijas,
+            otros,
+            ruedas,
+            tablas,
+            trucks
         })
     },
     crear:(req,res) => {

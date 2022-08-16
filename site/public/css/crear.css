@@ -54,6 +54,24 @@ body .boton-formulario{
 body .parrafo-form{
     padding: 12px;
 }
+body .control-formulario .texto{ 
+    display: block;
+    font-size: 1.5rem;    
+    width: 100%;   
+    height: 120px;
+    margin-top: 5px;
+    padding: 10px 5px;
+    box-shadow: 2px 2px 4px var(--colorVerdeOscuro);      
+}
+body .control-formulario .imagen{   
+    display: block;        
+    font-size: 1.5rem;           
+    width: 100%;   
+    height: 140px;
+    padding: 10px 5px;
+    box-shadow: 2px 2px 4px var(--colorVerdeOscuro);        
+
+}
 
 /* Tablet */
 @media(min-width:461px){ 
@@ -62,6 +80,25 @@ body .parrafo-form{
         max-width: 80%;
         box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
     }
+    body .control-formulario .texto{ 
+        display: block;  
+        font-size: 1.5rem;    
+        max-width: 80%;       
+        height: 120px;
+        margin-top: 5px;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);      
+    }
+    body .control-formulario .imagen{   
+        display: block;         
+        font-size: 1.5rem;     
+        max-width: 80%;        
+        height: 140px;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);        
+    
+    }
+    
 
 
     /* Desktop */
@@ -88,5 +125,25 @@ body .parrafo-form{
         display: block;
         margin: 0 auto;
     }
-
+    body .control-formulario .texto{ 
+        display: block;  
+        font-size: 1.5rem;   
+        margin: 0 auto; 
+        max-width: 40%;       
+        height: 120px;
+        margin-top: 5px;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);      
+    }
+    body .control-formulario .imagen{   
+        display: block;         
+        font-size: 1.5rem;     
+        margin: 0 auto; 
+        max-width: 40%;        
+        height: 140px;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);        
+    
+    }
+    
 }}

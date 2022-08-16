@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <%- include('../partials/head',{title: 'Crear'}) %> 
+
 <body>
+    <%- include('../partials/header') %>
+    <h1 class="titulo">Crear Productos</h1>
+    <main>
+        <div class="parrafo-form">
+            <p class="saludo">¡Bienvenido a Skull Tienda Urbana!</p>           
+        </div>
+        <form action="" method="post" class="create-form">
+            <div class="control-formulario">
+                <label>Marca</label>
+                <input type="email" name="email" minlength="1"
+                    placeholder="Introduzca la marca del producto" autocomplete="current-email" value=""
+                    class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Título</label>
+                <input type="password" name="password" placeholder="Ingrese el título"
+                    autocomplete="current-password" value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Categoría</label>
+                <input type="password" name="password" placeholder="Skate - Longboard - Accesorios"
+                    autocomplete="current-password" value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Precio</label>
+                <input type="text" name="nombre" placeholder="Ingrese el precio"
+                     value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Descuento</label>
+                <input type="text" name="nombre" placeholder="Ingrese el procentaje de descuento"
+                     value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Stock</label>
+                <input type="text" name="nombre" placeholder="Ingrese el stock"
+                     value="" class="control" />
+            </div>
+            <div class="control-formulario">
+                <label>Descripción</label>
+                <textarea class="texto" - placeholder="Introduzca una breve descripción del producto" ></textarea >
+                
+            </div>
+            <div class="control-formulario">
+                <label>Imagen</label>
+                <input class="imagen" - type="file" name="imagen" placeholder="Introduzca la imagen del producto"
+                     value="" class="control" />
+            </div>
+            
+            <button type="submit" class="boton-formulario">Crear Producto</button>
+
+            
+        </form>
+
+        
+    </main>
+    <%- include('../partials/footer') %> 
+</body>
+
     
 </body>
 </html>

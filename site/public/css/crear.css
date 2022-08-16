@@ -1,0 +1,149 @@
+body header {
+    width: 100%;
+    box-shadow: 2px 2px 4px black;
+    background-color: var(--colorNegro);
+    color: var(--colorBlanco);
+}
+
+body .slogan{
+    width: 95%;
+}
+
+body header .content-header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    
+}
+
+body header .content-header .arrow{
+    color: var(--colorBlanco);
+  
+}
+
+body .create-form{
+    padding: 20px 15px;
+}
+
+body .control-formulario{
+    margin-bottom: 15px;
+}
+
+body .control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+body .control-formulario .control{
+    width: 100%;
+    padding: 8px 8px;
+    box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
+}
+
+body .boton-formulario{
+    background-color: var(--colorVerdeOscuro);
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+body .parrafo-form{
+    padding: 12px;
+}
+body .control-formulario .texto{ 
+    display: block;
+    font-size: 1.5rem;    
+    width: 100%;   
+    height: 120px;
+    margin-top: 5px;
+    padding: 10px 5px;
+    box-shadow: 2px 2px 4px var(--colorVerdeOscuro);      
+}
+body .control-formulario .imagen{   
+    display: block;        
+    font-size: 1.5rem;           
+    width: 100%;   
+    height: 140px;
+    padding: 10px 5px;
+    box-shadow: 2px 2px 4px var(--colorVerdeOscuro);        
+
+}
+
+/* Tablet */
+@media(min-width:461px){ 
+   
+    body .control-formulario .control{
+        max-width: 80%;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
+    }
+    body .control-formulario .texto{ 
+        display: block;  
+        font-size: 1.5rem;    
+        max-width: 80%;       
+        height: 120px;
+        margin-top: 5px;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);      
+    }
+    body .control-formulario .imagen{   
+        display: block;         
+        font-size: 1.5rem;     
+        max-width: 80%;        
+        height: 140px;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);        
+    
+    }
+    
+
+
+    /* Desktop */
+@media(min-width:769px){
+    body .control-formulario .control{
+        max-width: 40%;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
+        font-size: 1.5rem;
+
+    }
+    body .titulo{
+        text-align: center;
+        font-size: 3rem;
+    }
+    body .saludo{
+        text-align: center;
+        font-size: 2.5rem;
+
+    }
+    body .control-formulario{
+        font-size: 2rem;
+    }
+    body .create-form .boton-formulario{
+        display: block;
+        margin: 0 auto;
+    }
+    body .control-formulario .texto{ 
+        display: block;  
+        font-size: 1.5rem;   
+        margin: 0 auto; 
+        max-width: 40%;       
+        height: 120px;
+        margin-top: 5px;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);      
+    }
+    body .control-formulario .imagen{   
+        display: block;         
+        font-size: 1.5rem;     
+        margin: 0 auto; 
+        max-width: 40%;        
+        height: 140px;
+        padding: 10px 5px;
+        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);        
+    
+    }
+    
+}}

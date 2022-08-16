@@ -17,6 +17,7 @@
 /* aca se puede unificar los estilos de inicio de sesión y registro, lo ideal es separarlos*/
 @import url('./404.css');
 /* aca es donde la pagina debe redireccionar en caso del que cliente escriba una ruta no existente*/
+@import url('./crear.css');
 
 /* aca nosotros tenemos las 5 paginas principales
 hogar

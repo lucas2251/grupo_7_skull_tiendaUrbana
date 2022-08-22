@@ -1,6 +1,12 @@
 
 module.exports = {
-    home: (req,res) => {
-        return res.render('home')
+    inicio: (req,res) => {
+        return res.render('inicio')
+    },
+    about: (req,res) => {
+        return res.render('about')
+    },
+    contacto: (req,res) => {
+        return res.render('contacto')
     }
 }

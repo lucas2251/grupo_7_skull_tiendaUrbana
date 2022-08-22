@@ -61,26 +61,26 @@
                 </tr>
             </thead>
             <tbody>
-                <% accesorios.forEach(accesorio=> { %>
+                <% productos.forEach(producto=> { %>
 
                     <tr>
                         <th scope="row">
-                            <%= accesorio.id %>
+                            <%= producto.id %>
                         </th>
                         <td>
-                            <%= accesorio.marca %>
+                            <%= producto.marca %>
                         </td>
                         <td>
-                            <%= accesorio.titulo %>
+                            <%= producto.titulo %>
                         </td>
                         <td>
-                            <%= accesorio.stock %>
+                            <%= producto.stock %>
                         </td>
                         <td>
-                            <%= accesorio.precio %>
+                            <%= producto.precio %>
                         </td>
                         <td>
-                            <%= accesorio.descuento %>
+                            <%= producto.descuento %>
                         </td>
                         <td><a href="/administrador/editar">
                                 <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
@@ -91,71 +91,6 @@
                         </td>
                     </tr>
 
-                    <% }); %>
-            
-                <% longboards.forEach(longboard=> { %>
-
-                    <tr>
-                        <th scope="row">
-                            <%= longboard.id %>
-                        </th>
-                        <td>
-                            <%= longboard.marca %>
-                        </td>
-                        <td>
-                            <%= longboard.titulo %>
-                        </td>
-                        <td>
-                            <%= longboard.stock %>
-                        </td>
-                        <td>
-                            <%= longboard.precio %>
-                        </td>
-                        <td>
-                            <%= longboard.descuento %>
-                        </td>
-                        <td><a href="/administrador/editar">
-                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
-                            </a>
-                            <a href="/administrador/editar">
-                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                            </a>
-                        </td>
-                    </tr>
-
-                    <% }); %>
-            
-                <% skates.forEach(skate=> { %>
-
-                    <tr>
-                        <th scope="row">
-                            <%= skate.id %>
-                        </th>
-                        <td>
-                            <%= skate.marca %>
-                        </td>
-                        <td>
-                            <%= skate.titulo %>
-                        </td>
-                        <td>
-                            <%= skate.stock %>
-                        </td>
-                        <td>
-                            <%= skate.precio %>
-                        </td>
-                        <td>
-                            <%= skate.descuento %>
-                        </td>
-                        <td><a href="/administrador/editar">
-                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
-                            </a>
-                            <a href="/administrador/editar">
-                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                            </a>
-                        </td>
-                    </tr>
-
-                    <% }); %>
             
                 <% lijas.forEach(lija=> { %>
 

@@ -152,5 +152,8 @@
     transition: all 0.5s;
     z-index: 10;
 }
+.home main .section1{
+    display: flex;
+}
 
 }

@@ -1,25 +1,12 @@
-let accesorios = require("../data/accesorios.json");
-let longboards = require("../data/longboards.json");
-let skates = require("../data/skates.json");
-let lijas = require("../data/partes/lijas.json");
-let otros = require("../data/partes/otros.json");
-let ruedas = require("../data/partes/ruedas.json");
-let tablas = require("../data/partes/tablas.json");
-let trucks = require("../data/partes/trucks.json")
+let productos = require("../data/productos.json");
+
 
 module.exports = {
 
 
     listar: (req,res) => {
         return res.render('admin/listar', {
-            accesorios, 
-            longboards,
-            skates,
-            lijas,
-            otros,
-            ruedas,
-            tablas,
-            trucks
+            productos
         })
     },
     crear:(req,res) => {

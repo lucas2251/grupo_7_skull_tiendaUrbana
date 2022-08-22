@@ -12,101 +12,42 @@
     </div>
     <h3 class="ofertas">OFERTAS</h3>
     <section class="section1">
+        
+        
+        <% productos.forEach(producto => { %>
         <article>
-            
+        <a class="ruta-detalle" href="/productos/detalle/<%= producto.id %>">
             <div class="image">
-            <img class="producto" src="/images/longboards/lab/lab-producto1.jpg" alt="longboard">
-        </div>
+            <img class="producto" src="/images/productos/<%= producto.imagenes[0]%>" alt="skate">
             <div class="contenedor2">
                 <div class="heart"><i class="far fa-heart"></i></div>
-                <p class="precio">$23.899</p>
-                <p class="descuento">33% OFF</p>
-                <p class="descripcion">Hanta Longboard</p>
-            </div>
-        </article>
-        <article>
-        <a class="ruta-detalle" href="/productos/detalle">
-            <div class="image">
-            <img class="producto" src="/images/skates/lab/lab-producto1.jpg" alt="skate">
-            <div class="contenedor2">
-                <div class="heart"><i class="far fa-heart"></i></div>
-                <p class="precio">$15000</p>
+                <p class="precio">$<%= producto.precio %></p>
                 <p class="descuento">20% OFF</p>
-                <p class="descripcion">Skate Dark Skull</p>
+                <p class="descripcion"><%= producto.titulo %></p>
             </div>
         </a>
             </div>
         </article>
-        <article>
-            <div class="image">
-            <img class="producto" src="/images/skates/lab/lab-producto2.png" alt="skate">
-            <div class="contenedor2">
-                <div class="heart"><i class="far fa-heart"></i></div>
-                <p class="precio">$15.899</p>
-                <p class="descuento">33% OFF</p>
-                <p class="descripcion">Skate Jungle</p>
-            </div>
-            </div>
-        </article>
-        <article>
-            <div class="image">
-            <img class="producto" src="/images/longboards/lab/lab-producto2.jpg" alt="longboard">
-            <div class="contenedor2">
-                <div class="heart"><i class="far fa-heart"></i></div>
-                <p class="precio">$22.000</p>
-                <p class="descuento">33% OFF</p>
-                <p class="descripcion">Longboard SPOCK</p>
-            </div>
-            </div>
-        </article>
+        <% }) %>
+        
         </section>
         <h3 class="visto">LO MÁS VISTO</h3>
     <section class="section2">
-    <article>
-        <div class="image">
-        <img class="producto" src="/images/longboards/lab/lab-producto1.jpg" alt="longboard">
-        <div class="contenedor2">
-            <div class="heart"><i class="far fa-heart"></i></div>
-            <p class="precio">$23.899</p>
-            <p class="descuento">33% OFF</p>
-            <p class="descripcion">Hanta Longboard</p>
-        </div>
-        </div>
-    </article>
-    <article>
-        <a class="ruta-detalle" href="/productos/detalle">
-        <div class="image">
-        <img class="producto" src="/images/skates/lab/lab-producto1.jpg" alt="skate">
-        <div class="contenedor2">
-            <div class="heart"><i class="far fa-heart"></i></div>
-            <p class="precio">$15000</p>
-            <p class="descuento">20% OFF</p>
-            <p class="descripcion">Skate Dark Skull</p>
-        </div>
-        </div></a>
-    </article>
-    <article>
-        <div class="image">
-        <img class="producto" src="/images/skates/lab/lab-producto2.png" alt="skate">
-        <div class="contenedor2">
-            <div class="heart"><i class="far fa-heart"></i></div>
-            <p class="precio">$15.899</p>
-            <p class="descuento">33% OFF</p>
-            <p class="descripcion">Skate Jungle</p>
-        </div>
-        </div>
-    </article>
-    <article>
-        <div class="image">
-        <img class="producto" src="/images/longboards/lab/lab-producto2.jpg" alt="longboard">
-        <div class="contenedor2">
-            <div class="heart"><i class="far fa-heart"></i></div>
-            <p class="precio">$22.000</p>
-            <p class="descuento">33% OFF</p>
-            <p class="descripcion">Longboard SPOCK</p>
-        </div>
-        </div>
-    </article>
+        <% productos.forEach(producto => { %>
+            <article>
+            <a class="ruta-detalle" href="/productos/detalle/<%= producto.id %>">
+                <div class="image">
+                <img class="producto" src="/images/productos/<%= producto.imagenes[0]%>" alt="skate">
+                <div class="contenedor2">
+                    <div class="heart"><i class="far fa-heart"></i></div>
+                    <p class="precio">$<%= producto.precio %></p>
+                    <p class="descuento">20% OFF</p>
+                    <p class="descripcion"><%= producto.titulo %></p>
+                </div>
+            </a>
+                </div>
+            </article>
+            <% }) %>
 </section>
 <h3 class="veo">LO VEO, LO QUIERO</h3>
 <section class="section3">

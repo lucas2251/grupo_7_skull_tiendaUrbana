@@ -1,0 +1,60 @@
+[
+
+    {
+        "id": 1,
+        "categoria":"Skates",
+        "marca": "Lab",
+        "titulo": "Skate Completo, DARK SKULL",
+        "precio": 15300,
+        "descuento": 20,
+        "descripcion": "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en 2 medidas 8” y 8.25”. Puede ser utilizada por niños y adultos.",
+        "stock": 13,
+        "imagenes": [
+        "lab-producto1.jpg",
+        "lab-general1.jpg",
+        "lab-general2.jpg"
+        ]
+    },{
+        "id": 2,
+        "categoria":"Skates",
+        "marca": "Lab",
+        "titulo": "Skate Completo , NEW JUNGLE",
+        "precio": 116020,
+        "descuento": 20,
+        "descripcion": "Tabla cóncava con doble kick, compuesto por 7 laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 54 mm. MAPLE ECONÓMICO: resiste hasta 60 kg, viene solo en medida 8” es ideal para principintes y niños.",
+        "stock": 13,
+        "imagenes": [
+        "lab-producto2.png",
+        "lab-general1.jpg",
+        "lab-general2.jpg"
+        ]
+    },{
+        "id": 3,
+            "categoria":"longboards",
+            "marca": "Lab",
+            "titulo": "Longboard Completo SUPER START TOP , RETRO WAVE",
+            "precio": 21420,
+            "descuento": 20,
+            "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.Largo: 95cm/37.4 , Ancho: 22cm/8.66 , WB: 70.7cm/28. Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm , Lija completa. OPCIONES DE MADERA: GUATAMBÚ: resiste hasta 85kg O MAPLE ECONÓMICO:  resiste hasta 85 kg",
+            "stock": 13,
+            "imagenes": [
+                "lab-long-producto1.jpg",
+                "lab-general1.jpg",
+                "lab-general2.jpg"
+            ]
+    },{
+        "id": 4,
+            "categoria":"longboards",
+            "marca": "Lab",
+            "titulo": "Longboard Completo SPOCK",
+            "precio": 23220,
+            "descuento": 20,
+            "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.  Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm. Wheelbase: 67.7cm, 64.7cm /26.6, 25.4.  GUATAMBÚ: resiste hasta 85kg, es ideal para principiantes.",
+            "stock": 13,
+            "imagenes": [
+                "lab-long-producto2.jpg",
+                "lab-general1.jpg",
+                "lab-general2.jpg"
+            ]
+    }
+]

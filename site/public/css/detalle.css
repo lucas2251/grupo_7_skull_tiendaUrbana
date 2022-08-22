@@ -166,48 +166,7 @@ body .detalle {
     position: relative;
 }
 
-/* Tablet */
-/*@media(min-width:461px){ 
-   
 
-
-   /* .conteiner-detail div{
-        width: 85%;
-    }
-    .detalle .detail{
-        width: 95%;
-        margin: ;
-    }
-
-    .detalle .conteiner-detail{
-        /*display: flex;*/
-       /* width: 85%;
-        margin: 0 auto;
-        flex-direction: row-reverse;
-    }
-    .detalle .conteiner-detail .detail{
-        box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
-        margin-left: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .detalle .conteiner-detail .detail .precio{
-        display: flex;
-        flex-direction: column;
-    }
-    .detalle .conteiner-detail .detail .sumar button{
-        margin-bottom: 5px;
-        font-size: 13px;
-    }
-    .detalle .conteiner-detail .detail .sumar div, input{
-        height: 70%;
-    }
-    .detalle .conteiner-detail .detail .sumar input{
-       width: 45%;
-    }
-    
-}*/
 
 /* Desktop */
 @media(min-width:769px){
@@ -217,27 +176,20 @@ body .detalle {
     }
     .detalle .detail-section{
         display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .detalle section .conteiner-detail{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
-        padding-top: 8%;
+        
+        width: 50%;
     }
-    .detalle section .product-detail{
-        width: 80%;
-    }
-    .detalle section .conteiner-detail .detail{
-        width: 87%;
-        height: 40%;
-        margin-bottom: 60px;
-    }
+    
     
     .detalle section .conteiner-detail .detail1 .text-detail{
         width: 90%;
-    }
-    .detalle section .conteiner-detail .detail1{
-        height: 30%;
     }
     .detalle section .conteiner-detail .detail1 .text-detail p{
         margin-bottom: 90px
@@ -255,6 +207,15 @@ body .detalle {
 
     .detalle .promotion aside article p{
         font-size: 18px;
+    }
+    .detalle img{
+        width: 60%;
+    }
+    .detalle .product-detail .img{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

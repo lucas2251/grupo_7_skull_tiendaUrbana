@@ -11,10 +11,21 @@
         </div>
         <form action="" method="post" class="create-form">
             <div class="control-formulario">
-                <label>Marca</label>
-                <input type="name" name="marca" minlength="1"
-                    placeholder="Introduzca la marca del producto" value=""
-                    class="control" />
+                <label for="floatingSelect">Marca</label>
+                <select class="control" name="Marca" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected hidden>Selecciona una opcion</option>
+                    <option value="Elements">Element</option>
+                    <option value="Lab">Lab</option>
+                    <option value="Kalima">Kalima</option>
+                    <option value="Woodo">Woodo</option>
+                    <option value="Thrasher">THRASHER</option>
+                    <option value="Sandro moral 777">SANDRO MORAL 777</option>
+                    <option value="Tuxs">TUXS</option>
+                    <option value="Pura vida">Pura vida</option>
+                    <option value="Spitfire">SPITFIRE</option>
+                    <option value="Bones">Bones</option>
+                    <option value="Otros">Otros</option>
+                  </select>
             </div>
             <div class="control-formulario">
                 <label>Título</label>
@@ -31,6 +42,7 @@
                     <option value="Partes">Partes</option>
                   </select>
             </div>
+            
             <div class="control-formulario">
                 <label>Precio</label>
                 <input type="number" name="nombre" placeholder="Ingrese el precio"

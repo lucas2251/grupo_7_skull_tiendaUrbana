@@ -29,6 +29,23 @@ module.exports = {
         }) */
         /* return res.send(producto) Comprobar que esta llegando bien el elemento*/
        return res.render('admin/editar')
+    },
+    tienda:(req,res) =>{
+        
+        let {Marca, Título, Categoria, Precio, Descuento, Stock, Descripción}= req.body
+        
+        let producto ={
+            id: productos[productos.length - 1].id + 1,
+            marca,
+            titulo,
+            categorias,
+            precio,
+            descuento,
+            stock,
+            descripcion,
+            imagenes
+
+        }
     }
 
     }

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/360f664bcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Admin</title>
+</head>
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../">Home</a>
+                    </li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <h1>Admin</h1>
+    <a href="/administrador/crear">
+        <button type="button" class="btn btn-primary">Crear Producto</button>
+    </a>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Desc.</th>
+                    <th scope="col">Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% accesorios.forEach(accesorio=> { %>
+
+                    <tr>
+                        <th scope="row">
+                            <%= accesorio.id %>
+                        </th>
+                        <td>
+                            <%= accesorio.marca %>
+                        </td>
+                        <td>
+                            <%= accesorio.titulo %>
+                        </td>
+                        <td>
+                            <%= accesorio.stock %>
+                        </td>
+                        <td>
+                            <%= accesorio.precio %>
+                        </td>
+                        <td>
+                            <%= accesorio.descuento %>
+                        </td>
+                        <td><a href="/administrador/editar">
+                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                            </a>
+                            <a href="/administrador/editar">
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+            <tbody>
+                <% longboards.forEach(longboard=> { %>
+
+                    <tr>
+                        <th scope="row">
+                            <%= longboard.id %>
+                        </th>
+                        <td>
+                            <%= longboard.marca %>
+                        </td>
+                        <td>
+                            <%= longboard.titulo %>
+                        </td>
+                        <td>
+                            <%= longboard.stock %>
+                        </td>
+                        <td>
+                            <%= longboard.precio %>
+                        </td>
+                        <td>
+                            <%= longboard.descuento %>
+                        </td>
+                        <td><a href="/administrador/editar">
+                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                            </a>
+                            <a href="/administrador/editar">
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+            <tbody>
+                <% skates.forEach(skate=> { %>
+
+                    <tr>
+                        <th scope="row">
+                            <%= skate.id %>
+                        </th>
+                        <td>
+                            <%= skate.marca %>
+                        </td>
+                        <td>
+                            <%= skate.titulo %>
+                        </td>
+                        <td>
+                            <%= skate.stock %>
+                        </td>
+                        <td>
+                            <%= skate.precio %>
+                        </td>
+                        <td>
+                            <%= skate.descuento %>
+                        </td>
+                        <td><a href="/administrador/editar">
+                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                            </a>
+                            <a href="/administrador/editar">
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+            <tbody>
+                <% lijas.forEach(lija=> { %>
+
+                    <tr>
+                        <th scope="row">
+                            <%= lija.id %>
+                        </th>
+                        <td>
+                            <%= lija.marca %>
+                        </td>
+                        <td>
+                            <%= lija.titulo %>
+                        </td>
+                        <td>
+                            <%= lija.stock %>
+                        </td>
+                        <td>
+                            <%= lija.precio %>
+                        </td>
+                        <td>
+                            <%= lija.descuento %>
+                        </td>
+                        <td><a href="/administrador/editar">
+                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                            </a>
+                            <a href="/administrador/editar">
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+            <tbody>
+                <% otros.forEach(otro=> { %>
+
+                    <tr>
+                        <th scope="row">
+                            <%= otro.id %>
+                        </th>
+                        <td>
+                            <%= otro.marca %>
+                        </td>
+                        <td>
+                            <%= otro.titulo %>
+                        </td>
+                        <td>
+                            <%= otro.stock %>
+                        </td>
+                        <td>
+                            <%= otro.precio %>
+                        </td>
+                        <td>
+                            <%= otro.descuento %>
+                        </td>
+                        <td><a href="/administrador/editar">
+                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                            </a>
+                            <a href="/administrador/editar">
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+            <tbody>
+                <% ruedas.forEach(rueda=> { %>
+
+                    <tr>
+                        <th scope="row">
+                            <%= rueda.id %>
+                        </th>
+                        <td>
+                            <%= rueda.marca %>
+                        </td>
+                        <td>
+                            <%= rueda.titulo %>
+                        </td>
+                        <td>
+                            <%= rueda.stock %>
+                        </td>
+                        <td>
+                            <%= rueda.precio %>
+                        </td>
+                        <td>
+                            <%= rueda.descuento %>
+                        </td>
+                        <td><a href="/administrador/editar">
+                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                            </a>
+                            <a href="/administrador/editar">
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+            <tbody>
+                <% tablas.forEach(tabla=> { %>
+
+                    <tr>
+                        <th scope="row">
+                            <%= tabla.id %>
+                        </th>
+                        <td>
+                            <%= tabla.marca %>
+                        </td>
+                        <td>
+                            <%= tabla.titulo %>
+                        </td>
+                        <td>
+                            <%= tabla.stock %>
+                        </td>
+                        <td>
+                            <%= tabla.precio %>
+                        </td>
+                        <td>
+                            <%= tabla.descuento %>
+                        </td>
+                        <td><a href="/administrador/editar">
+                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                            </a>
+                            <a href="/administrador/editar">
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+            <tbody>
+                <% trucks.forEach(truck=> { %>
+
+                    <tr>
+                        <th scope="row">
+                            <%= truck.id %>
+                        </th>
+                        <td>
+                            <%= truck.marca %>
+                        </td>
+                        <td>
+                            <%= truck.titulo %>
+                        </td>
+                        <td>
+                            <%= truck.stock %>
+                        </td>
+                        <td>
+                            <%= truck.precio %>
+                        </td>
+                        <td>
+                            <%= truck.descuento %>
+                        </td>
+                        <td><a href="/administrador/editar">
+                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
+                            </a>
+                            <a href="/administrador/editar">
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <% }); %>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

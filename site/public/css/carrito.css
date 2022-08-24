@@ -29,7 +29,7 @@
     ;
 }
 .carrito  section .imagen-carrito img{
-    width: 115%;
+    width: 100%;
     margin: 55px 0;
     rotate: 90deg;
 }
@@ -159,7 +159,7 @@
     }
     
     .carrito section .imagen-carrito img{
-        width: 100%;
+        width: 115%;
         rotate: none
     }
     .carrito section .imagen-carrito{
@@ -210,13 +210,15 @@
 
 
 @media (min-width:769px){
-.carrito main section .imagen-carrito img{
-        width: 100%;
-
+.carrito  section .imagen-carrito img{
+        width: 55%;
+        
 }
 .carrito section .imagen-carrito{
     width: 40%;
     margin-top: 1%;
+    display: flex;
+    justify-content: center;
 
 }
 .carrito .nav-carrito{

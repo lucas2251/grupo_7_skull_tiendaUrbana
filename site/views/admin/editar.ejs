@@ -9,7 +9,7 @@
         <div class="parrafo-form">
             <p class="saludo">¡Bienvenidx ADMIN!</p>           
         </div>
-        <form action="" method="post" class="create-form">
+        <form action="/admin/editar/<%= producto.id %>" method="post" class="create-form">
             <div class="control-formulario">
                 <label for="floatingSelect">Marca</label>
                 <select class="control" name="Marca" id="floatingSelect" aria-label="Floating label select example">
@@ -29,7 +29,7 @@
             </div>
             <div class="control-formulario">
                 <label>Título</label>
-                <input type="name" name="name" placeholder="Ingrese el título"
+                <input type="name" name="titulo" id="titulo" placeholder="Ingrese el título"
                     autocomplete="current-password" value="<%= producto.titulo %>" class="control" />
             </div>
             <div class="control-formulario">

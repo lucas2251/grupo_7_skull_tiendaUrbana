@@ -19,7 +19,7 @@ module.exports = {
             return elemento.id == id
         }) 
         /* return res.send(producto) Comprobar que esta llegando bien el elemento*/
-       return res.render('admin/editar')
+       return res.render('admin/editar',{producto})
     }
 
     }

@@ -12,17 +12,19 @@
         <section class="detail-section">
         <article class="product-detail">
             <div class="img">
-                <img src="/images/skates/lab/lab-producto1.jpg" alt="lkj">
-                <h1>Skate Completo, DARK SKULL</h1>
+                <img src="/images/productos/<%= producto.imagenes[0] %>" alt="lkj">
+                <h1><%= producto.marca %></h1>
+                <h1><%= producto.titulo %></h1>
+                
             </div>
 
         </article>
         <article class="conteiner-detail">
             <div class="detail">
                 <div class="precio">
-                    <small>20%</small>
-                    <span>$15000</span>
-                    <p>$12000</p>
+                    <small><%= producto.descuento %></small>
+                    <span><%= producto.precio %></span>
+                    <p>$<%= producto.precio - (producto.precio * producto.descuento / 100)%></p>
                 </div>
 
                 <div class="sumar">
@@ -35,7 +37,7 @@
             <div class="detail1">
                 <h2>Detalle del producto:</h2>
                 <div class="text-detail">
-                    <p>Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en 2 medidas 8” y 8.25”. Puede ser utilizada por niños y adultos. </p>
+                    <p>$<%= producto.descripcion%></p>
                 </div>
 
             </div>

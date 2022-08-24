@@ -30,7 +30,7 @@
             <div class="control-formulario">
                 <label>Título</label>
                 <input type="name" name="name" placeholder="Ingrese el título"
-                    autocomplete="current-password" value="" class="control" />
+                    autocomplete="current-password" value="<%= producto.titulo %>" class="control" />
             </div>
             <div class="control-formulario">
                 <label for="floatingSelect">Categoria</label>
@@ -45,21 +45,21 @@
             <div class="control-formulario">
                 <label>Precio</label>
                 <input type="number" name="nombre" placeholder="Ingrese el precio"
-                     value="" class="control" />
+                     value="<%=producto.precio%>" class="control" />
             </div>
             <div class="control-formulario">
                 <label>Descuento</label>
                 <input type="number" name="nombre" placeholder="Ingrese el procentaje de descuento"
-                     value="" class="control" />
+                     value="<%=producto.descuento%>" class="control" />
             </div>
             <div class="control-formulario">
                 <label>Stock</label>
                 <input type="number" name="nombre" placeholder="Ingrese el stock"
-                     value="" class="control" />
+                     value="<%=producto.stock%>" class="control" />
             </div>
             <div class="control-formulario">
                 <label>Descripción</label>
-                <textarea class="texto" - placeholder="Introduzca una breve descripción del producto" ></textarea >
+                <textarea class="texto" - placeholder="Introduzca una breve descripción del producto" ><%= producto.descripcion %></textarea >
                 
             </div>
             <div class="control-formulario">

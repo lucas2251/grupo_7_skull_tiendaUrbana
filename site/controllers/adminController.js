@@ -1,3 +1,4 @@
+const fs = require('fs')
 const productos = require("../data/productos.json");
 const lijas = require("../data/partes/lijas.json");
 const otros = require("../data/partes/otros.json");

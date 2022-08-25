@@ -18,6 +18,8 @@ app.set('view engine', 'ejs');
 
 /* Middlewares */
 app.use(express.json()); //estes
+app.use(express.urlencoded({ extended: false }));
+
 app.use(express.static(path.resolve(__dirname,'public')))
 
 /* Rutas */

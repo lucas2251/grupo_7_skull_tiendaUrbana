@@ -280,13 +280,14 @@
     },
     {
         "id": 21,
-        "categoria": "Longboards",
-        "marca": "Elements",
+        "categoria": "skates",
         "precio": null,
         "descuento": null,
         "stock": null,
         "imagenes": [
             "trucks-producto2.jpeg"
-        ]
+        ],
+        "titulo": "jgcghcuhiu",
+        "marca": "element"
     }
 ]

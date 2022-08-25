@@ -16,24 +16,24 @@ module.exports = {
         return res.render('admin/crear')
     },
     editar:(req,res) => {
-
+       let categoria =["skates","longboards","accesorios","partes"]
         id = +req.params.id
         let producto = productos.find((elemento) => {
             return elemento.id == id
         }) 
         /* return res.send(producto) Comprobar que esta llegando bien el elemento*/
-       return res.render('admin/editar',{producto})
+       return res.render('admin/editar',{producto,categoria})
     },
     actualizar:(req,res)=>{
         const idParams = +req.params.id
-        const { Marca, Titulo, Categoria, Precio, Descuento, Stock, Descripcion } = req.body
+        const { marca, titulo, Categoria, precio, Descuento, Stock, Descripcion } = req.body
 
         productos.forEach(producto => {
             if (producto.id === idParams) {
-                producto.marca = Marca
-                producto.titulo = Titulo
+                producto.marca = marca
+                producto.titulo = titulo
                 producto.categoria = Categoria
-                producto.precio = +Precio
+                producto.precio = +precio
                 producto.descuento = +Descuento
                 producto.stock = +Stock
                 producto.descripcion = Descripcion

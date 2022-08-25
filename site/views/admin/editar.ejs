@@ -9,7 +9,7 @@
         <div class="parrafo-form">
             <p class="saludo">¡Bienvenidx ADMIN!</p>           
         </div>
-        <form action="/admin/editar/<%= producto.id %>" method="post" class="create-form">
+        <form action="/administrador/editar/<%= producto.id %>?_method=PUT" method="post" class="create-form">
             <div class="control-formulario">
                 <label for="floatingSelect">Marca</label>
                 <select class="control" name="Marca" id="floatingSelect" aria-label="Floating label select example">

@@ -3,7 +3,7 @@ const router = express.Router()
 
 let {carrito,detalle,} = require('../controllers/productosController')
 
-router.get('/carrito', carrito)
+router.get('/carrito/:id', carrito)
 router.get('/detalle/:id', detalle)
 
 

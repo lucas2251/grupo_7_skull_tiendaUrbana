@@ -12,8 +12,11 @@
         <form action="/administrador/editar/<%= producto.id %>?_method=PUT" method="post" class="create-form">
             <div class="control-formulario">
                 <label for="floatingSelect">Marca</label>
-                <input type="name" name="marca" id="titulo" placeholder="Ingrese marca"
-                autocomplete="current-password" value="<%= producto.marca %>" class="control" />
+                <select class="control" name="marca" id="floatingSelect" aria-label="Floating label select example">
+                    <% marca.forEach(marca => { %>
+                        <option value="<%= marca %>" <%= producto.marca.toLowerCase() === marca.toLowerCase() ? 'selected' : null %> ><%= marca %></option>
+                      <% }) %>
+                  </select>
             </div>
             <div class="control-formulario">
                 <label>Título</label>

@@ -267,7 +267,7 @@
     },
     {
         "id": 20,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "DATER",
         "titulo": "Trucks Dater skate 139 mm color",
         "precio": 7.999,
@@ -281,14 +281,14 @@
     {
         "id": 21,
         "categoria": "skates",
-        "precio": 456,
-        "descuento": 345,
-        "stock": 345,
+        "precio": 45000,
+        "descuento": 30,
+        "stock": 34,
         "imagenes": [
             "trucks-producto2.jpeg"
         ],
-        "titulo": "skate",
-        "marca": "element",
-        "descripcion": "este e sun skate"
+        "titulo": "Skate trasher",
+        "marca": "KALIMA",
+        "descripcion": "Skate trasher negro de madera de guatambu reforzada."
     }
 ]

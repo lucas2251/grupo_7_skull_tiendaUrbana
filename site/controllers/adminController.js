@@ -17,12 +17,13 @@ module.exports = {
     },
     editar:(req,res) => {
        let categoria =["skates","longboards","accesorios","partes"]
+       let marca = ["Element","Lab","Kalima","Ace shcok","RINGS ACE WAX","WOODOO","KALIMA","REDWINGS","BONES KOWALSKI","DATER"]
         id = +req.params.id
         let producto = productos.find((elemento) => {
             return elemento.id == id
         }) 
         /* return res.send(producto) Comprobar que esta llegando bien el elemento*/
-       return res.render('admin/editar',{producto,categoria})
+       return res.render('admin/editar',{producto,categoria,marca})
     },
     actualizar:(req,res)=>{
     

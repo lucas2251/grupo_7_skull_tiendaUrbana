@@ -2,8 +2,13 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const port = 3030;
+const methodOverride = require("method-override");
 
 app.use(express.static(path.resolve(__dirname,'public')));
+
+/*metodos http*/
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
 
 /* Requerir las rutas */
@@ -19,6 +24,8 @@ app.set('view engine', 'ejs');
 /* Middlewares */
 app.use(express.json()); //estes
 app.use(express.static(path.resolve(__dirname,'public')))
+/*trabajar con put y delete*/
+app.use(methodOverride("_method"));
 
 /* Rutas */
 app.use('/', indexRouter);

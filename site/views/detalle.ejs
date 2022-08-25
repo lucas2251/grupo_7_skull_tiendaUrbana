@@ -22,8 +22,8 @@
         <article class="conteiner-detail">
             <div class="detail">
                 <div class="precio">
-                    <small><%= producto.descuento %></small>
-                    <span><%= producto.precio %></span>
+                    <div><small><%= producto.descuento %>%</small>
+                    <span>$<%= producto.precio %></span></div>
                     <p>$<%= producto.precio - (producto.precio * producto.descuento / 100)%></p>
                 </div>
 

@@ -281,13 +281,14 @@
     {
         "id": 21,
         "categoria": "skates",
-        "precio": null,
-        "descuento": null,
-        "stock": null,
+        "precio": 456,
+        "descuento": 345,
+        "stock": 345,
         "imagenes": [
             "trucks-producto2.jpeg"
         ],
-        "titulo": "jgcghcuhiu",
-        "marca": "element"
+        "titulo": "skate",
+        "marca": "element",
+        "descripcion": "este e sun skate"
     }
 ]

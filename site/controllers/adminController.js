@@ -25,8 +25,10 @@ module.exports = {
        return res.render('admin/editar',{producto,categoria})
     },
     actualizar:(req,res)=>{
+    
+
         const idParams = +req.params.id
-        const { marca, titulo, Categoria, precio, Descuento, Stock, Descripcion } = req.body
+        const { marca, titulo, Categoria, precio, descuento, stock, descripcion } = req.body
 
         productos.forEach(producto => {
             if (producto.id === idParams) {
@@ -34,9 +36,9 @@ module.exports = {
                 producto.titulo = titulo
                 producto.categoria = Categoria
                 producto.precio = +precio
-                producto.descuento = +Descuento
-                producto.stock = +Stock
-                producto.descripcion = Descripcion
+                producto.descuento = +descuento
+                producto.stock = +stock
+                producto.descripcion = descripcion
             }
         })
         guardar(productos)

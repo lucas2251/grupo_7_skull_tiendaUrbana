@@ -30,22 +30,22 @@
             </div>
             <div class="control-formulario">
                 <label>Precio</label>
-                <input type="number" name="nombre" id="precio" placeholder="Ingrese el precio"
+                <input type="number" name="precio" id="precio" placeholder="Ingrese el precio"
                      value="<%=producto.precio%>" class="control" />
             </div>
             <div class="control-formulario">
                 <label>Descuento</label>
-                <input type="number" name="nombre" placeholder="Ingrese el procentaje de descuento"
+                <input type="number" name="descuento" placeholder="Ingrese el procentaje de descuento"
                      value="<%=producto.descuento%>" class="control" />
             </div>
             <div class="control-formulario">
                 <label>Stock</label>
-                <input type="number" name="nombre" id="Stock" placeholder="Ingrese el stock"
+                <input type="number" name="stock" id="Stock" placeholder="Ingrese el stock"
                      value="<%=producto.stock%>" class="control" />
             </div>
             <div class="control-formulario">
                 <label>Descripción</label>
-                <textarea class="texto" - placeholder="Introduzca una breve descripción del producto" ><%= producto.descripcion %></textarea >
+                <textarea class="texto" - placeholder="Introduzca una breve descripción del producto" name="descripcion" ><%= producto.descripcion %></textarea >
                 
             </div>
             <div class="control-formulario">

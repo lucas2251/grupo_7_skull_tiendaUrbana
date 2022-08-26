@@ -290,5 +290,16 @@
         "titulo": "Skate trasher",
         "marca": "KALIMA",
         "descripcion": "Skate trasher negro de madera de guatambu reforzada."
+    },
+    {
+        "id": 22,
+        "marca": "BONES KOWALSKI",
+        "titulo": "Ruedas Bones kowalski",
+        "categoria": "partes",
+        "precio": 12000,
+        "descuento": 10,
+        "stock": 12,
+        "descripcion": "Ruedas super reforzadas color negro.",
+        "imagenes": "default-image.png"
     }
 ]

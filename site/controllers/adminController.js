@@ -1,27 +1,14 @@
-/*let accesorios = require("../data/accesorios.json");
-let longboards = require("../data/longboards.json");
-let skates = require("../data/skates.json");
-let lijas = require("../data/partes/lijas.json");
-let otros = require("../data/partes/otros.json");
-let ruedas = require("../data/partes/ruedas.json");
-let tablas = require("../data/partes/tablas.json");
-let trucks = require("../data/partes/trucks.json")*/
+const fs = require('fs')
+const path = require('path')
+const productos = require('../data/productos.json')
+const historial = require('../data/historial.json')
 
-module.exports = {
+const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/productos.json')
+    , JSON.stringify(dato, null, 4), 'utf-8')
+const guardarHistorial = (dato) => fs.writeFileSync(path.join(__dirname, '../data/historial.json')
+    , JSON.stringify(dato, null, 4), 'utf-8')
 
-
-    /*listar: (req,res) => {
-        return res.render('admin/listar', {
-            accesorios, 
-            longboards,
-            skates,
-            lijas,
-            otros,
-            ruedas,
-            tablas,
-            trucks
-        })
-    },*/
+module.exports = {    
 
     eliminar: (req, res) => {
         idParams = +req.params.id
@@ -36,7 +23,7 @@ module.exports = {
         let productosModificados = productos.filter(producto => producto.id !== idParams)
         guardar(productosModificados)
 
-        return res.redirect('/administrador/historial')
+        return res.redirect('/admin/listar')
     },
     crear: (req,res) =>  {        
     
@@ -55,6 +42,31 @@ module.exports = {
 
 
 }
+
+/*listar: (req,res) => {
+        return res.render('admin/listar', {
+            accesorios, 
+            longboards,
+            skates,
+            lijas,
+            otros,
+            ruedas,
+            tablas,
+            trucks
+        })
+    },*/
+
+
+
+/*let accesorios = require("../data/accesorios.json");
+let longboards = require("../data/longboards.json");
+let skates = require("../data/skates.json");
+let lijas = require("../data/partes/lijas.json");
+let otros = require("../data/partes/otros.json");
+let ruedas = require("../data/partes/ruedas.json");
+let tablas = require("../data/partes/tablas.json");
+let trucks = require("../data/partes/trucks.json")*/
+
 /* list: (req,res) => {
         return res.render('admin/listaProductos')
     },*/

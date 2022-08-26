@@ -2,8 +2,6 @@ const express = require('express')
 const router = express.Router()
 
 
-
-
 let {crear,editar,historial,eliminar,restaurar} = require('../controllers/adminController')
 
 /*router.get('/listar', listar)*/

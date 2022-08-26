@@ -320,6 +320,16 @@
                                 <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
                             </a>
                         </td>
+                        <td>
+                            <div>
+                               
+                                    <form action="/administrador/eliminar/<%= productos.id%>?_method=DELETE" method="post">
+                                      <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                    </form>
+                                  
+                              </div>
+
+                        </td>
                     </tr>
 
                     <% }); %>

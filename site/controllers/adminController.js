@@ -1,15 +1,21 @@
-let productos = require("../data/productos.json");
 const fs = require('fs')
+const productos = require("../data/productos.json");
+
 const path = require('path')
 const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/productos.json')
     , JSON.stringify(dato, null, 4), 'utf-8')
 
+
+
+
+    
 module.exports = {
 
 
     listar: (req,res) => {
         return res.render('admin/listar', {
             productos
+
         })
     },
     crear:(req,res) => {
@@ -17,12 +23,13 @@ module.exports = {
     },
     editar:(req,res) => {
        let categoria =["skates","longboards","accesorios","partes"]
-       let marca = ["Element","Lab","Kalima","Ace shcok","RINGS ACE WAX","WOODOO","KALIMA","REDWINGS","BONES KOWALSKI","DATER"]
+       let marca = ["Element","Lab","Kalima","Ace shcok","RINGS ACE WAX","WOODOO","REDWINGS","BONES KOWALSKI","DATER"]
         id = +req.params.id
         let producto = productos.find((elemento) => {
             return elemento.id == id
         }) 
         /* return res.send(producto) Comprobar que esta llegando bien el elemento*/
+
        return res.render('admin/editar',{producto,categoria,marca})
     },
     actualizar:(req,res)=>{
@@ -44,6 +51,25 @@ module.exports = {
         })
         guardar(productos)
             return res.redirect('/administrador/listar')
+
+    },
+    tienda: (req,res)=>{
+        let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
+
+        let productoNuevo= {
+            id:productos[productos.length - 1].id + 1,
+            marca:Marca,
+            titulo:Titulo,
+            categoria:Categoria,
+            precio:Precio,
+            descuento:Descuento,
+            stock:Stock,
+            descripcion:Descripcion,
+            imagenes: "default-image.png"
+        }
+        productos.push(productoNuevo)
+        guardar(productos)
+        return res.redirect('/administrador/listar')
     }
 
     }

@@ -1,6 +1,119 @@
-[
+[{
+    "id": 1,
+    "categoria": "longboards",
+    "marca": "Lab",
+    "titulo": "Longboard Completo SPOCK",
+    "precio": 23220,
+    "descuento": 20,
+    "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.  Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm. Wheelbase: 67.7cm, 64.7cm /26.6, 25.4.  GUATAMBÚ: resiste hasta 85kg, es ideal para principiantes.",
+    "stock": 13,
+    "imagenes": [
+        "lab-long-producto2.jpg",
+        "lab-general1.jpg",
+        "lab-general2.jpg"
+    ]
+},
     {
-        "id": 1,
+        "id": 2,
+        "categoria":"Skates",
+        "marca": "Lab",
+        "titulo": "Skate Completo , NEW JUNGLE",
+        "precio": 116020,
+        "descuento": 20,
+        "descripcion": "Tabla cóncava con doble kick, compuesto por 7 laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 54 mm. MAPLE ECONÓMICO: resiste hasta 60 kg, viene solo en medida 8” es ideal para principintes y niños.",
+        "stock": 13,
+        "imagenes": [
+        "lab-producto2.png",
+        "lab-general1.jpg",
+        "lab-general2.jpg"
+        ]
+    }, 
+    {
+        "id": 3,
+        "categoria": "longboards",
+        "marca": "Lab",
+        "titulo": "Longboard Completo SUPER START TOP , RETRO WAVE",
+        "precio": 21420,
+        "descuento": 20,
+        "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.Largo: 95cm/37.4 , Ancho: 22cm/8.66 , WB: 70.7cm/28. Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm , Lija completa. OPCIONES DE MADERA: GUATAMBÚ: resiste hasta 85kg O MAPLE ECONÓMICO:  resiste hasta 85 kg",
+        "stock": 13,
+        "imagenes": [
+            "lab-long-producto1.jpg",
+            "lab-general1.jpg",
+            "lab-general2.jpg"
+        ]
+    },   
+    {
+            "id": 4,
+            "categoria": "Skates",
+            "marca": "Lab",
+            "titulo": "Skate Completo, DARK SKULL",
+            "precio": 15300,
+            "descuento": 20,
+            "descripcion": "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en 2 medidas 8” y 8.25”. Puede ser utilizada por niños y adultos.",
+            "stock": 13,
+            "imagenes": [
+                "lab-producto1.jpg",
+                "lab-general1.jpg",
+                "lab-general2.jpg"
+            ]},
+            
+            {
+                "id": 5,
+                "categoria":"Partes",
+                "marca": "CLEAVER BUCCHIERI ",
+                "titulo": "TABLA DE SKATE CLEAVER BUCCHIERI 78",
+                "precio": 11.560,
+                "descuento": 20,
+                "descripcion": "Construcción con tecnología EPOBLOCK. Maple Canadiense de 7 capas + pegamento EPOXI.",
+                "stock": 13,
+                "imagenes": [
+                "tablas-producto5.jpg"
+                ]
+            },
+            {
+                "id": 6,
+                "categoria":"Skates",
+                "marca": "Element",
+                "titulo": "SKATE ELEMENT SECTION",
+                "precio": 30.990,
+                "descuento": 20,
+                "descripcion": "DECK ELEMENT MAPLE CANADIENSE 8 . TRUCKS ELEMENT 139MM. RUEDAS 53MM 99A. RULEMANES ELEMENT ABEC 5",
+                "stock": 13,
+                "imagenes": [
+                "element-producto1.png",
+                "element-producto1b.png",
+                "element-general.png"
+                ]
+            },
+    
+    {
+        "id": 7,
+        "categoria": "Partes",
+        "marca": "WOODOO",
+        "titulo": "TABLA DE SKATE WOODOO QUIQUE ILUMINATI",
+        "precio": 10.96,
+        "descuento": 20,
+        "descripcion": "Construcción con tecnología EPOBLOCK. Maple Canadiense de 7 capas + pegamento EPOXI.",
+        "stock": 13,
+        "imagenes": [
+            "tablas-producto1.jpg"
+        ]
+    },
+    {
+        "id": 8,
+        "categoria": "Partes",
+        "marca": "WOODOO",
+        "titulo": "TABLA DE SKATE WOODOO SANDRO ILUMINATI",
+        "precio": 10.96,
+        "descuento": 20,
+        "descripcion": "Construcción con tecnología EPOBLOCK. Maple Canadiense de 7 capas + pegamento EPOXI.",
+        "stock": 13,
+        "imagenes": [
+            "tablas-producto2.jpg"
+        ]
+    },
+        { "id": 9,
         "categoria": "Skates",
         "marca": "Element",
         "titulo": "SKATE ELEMENT SECTION",
@@ -15,7 +128,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 10,
         "categoria": "Skates",
         "marca": "Element",
         "titulo": "SKATE ELEMENT MAGMA SECTION",
@@ -29,7 +142,7 @@
         ]
     },
     {
-        "id": 3,
+        "id":11,
         "categoria": "Skates",
         "marca": "Element",
         "titulo": "SKATE ELEMENT MAGMA SEAL",
@@ -42,53 +155,11 @@
             "element-general.png"
         ]
     },
+   
+   
+    
     {
-        "id": 4,
-        "categoria": "Skates",
-        "marca": "Lab",
-        "titulo": "Skate Completo, DARK SKULL",
-        "precio": 15300,
-        "descuento": 20,
-        "descripcion": "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en 2 medidas 8” y 8.25”. Puede ser utilizada por niños y adultos.",
-        "stock": 13,
-        "imagenes": [
-            "lab-producto1.jpg",
-            "lab-general1.jpg",
-            "lab-general2.jpg"
-        ]
-    },
-    {
-        "id": 5,
-        "categoria": "longboards",
-        "marca": "Lab",
-        "titulo": "Longboard Completo SUPER START TOP , RETRO WAVE",
-        "precio": 21420,
-        "descuento": 20,
-        "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.Largo: 95cm/37.4 , Ancho: 22cm/8.66 , WB: 70.7cm/28. Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm , Lija completa. OPCIONES DE MADERA: GUATAMBÚ: resiste hasta 85kg O MAPLE ECONÓMICO:  resiste hasta 85 kg",
-        "stock": 13,
-        "imagenes": [
-            "lab-producto1.jpg",
-            "lab-general1.jpg",
-            "lab-general2.jpg"
-        ]
-    },
-    {
-        "id": 6,
-        "categoria": "longboards",
-        "marca": "Lab",
-        "titulo": "Longboard Completo SPOCK",
-        "precio": 23220,
-        "descuento": 20,
-        "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.  Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm. Wheelbase: 67.7cm, 64.7cm /26.6, 25.4.  GUATAMBÚ: resiste hasta 85kg, es ideal para principiantes.",
-        "stock": 13,
-        "imagenes": [
-            "lab-producto2.jpg",
-            "lab-general1.jpg",
-            "lab-general2.jpg"
-        ]
-    },
-    {
-        "id": 7,
+        "id": 12,
         "categoria": "longboards",
         "marca": "Kalima",
         "titulo": "LONGBOARD KALIMA INSOMNIA HARD MAPLE",
@@ -103,7 +174,7 @@
         ]
     },
     {
-        "id": 8,
+        "id":13,
         "categoria": "longboards",
         "marca": "Kalima",
         "titulo": "LONGBOARD KALIMA COYA HARD MAPLE",
@@ -118,7 +189,7 @@
         ]
     },
     {
-        "id": 9,
+        "id": 14,
         "categoria": "Accesorios",
         "marca": "Ace shcok",
         "titulo": "PADS ACE SHCOK 1/16 BLACK",
@@ -131,7 +202,7 @@
         ]
     },
     {
-        "id": 10,
+        "id": 15,
         "categoria": "Accesorios",
         "marca": "RINGS ACE WAX",
         "titulo": "VELA RINGS ACE WAX",
@@ -145,33 +216,7 @@
         ]
     },
     {
-        "id": 11,
-        "categoria": "Partes",
-        "marca": "WOODOO",
-        "titulo": "LIJA WOODOO ZEBRA VERDE",
-        "precio": 1.85,
-        "descuento": 20,
-        "descripcion": "LIJA DE GOMA IMPORTADA",
-        "stock": 13,
-        "imagenes": [
-            "lijas-producto1.jpg"
-        ]
-    },
-    {
-        "id": 12,
-        "categoria": "Partes",
-        "marca": "WOODOO",
-        "titulo": "LIJA WOODOO ZEBRA AMARILLA",
-        "precio": 1.85,
-        "descuento": 20,
-        "descripcion": "LIJA DE GOMA IMPORTADA",
-        "stock": 13,
-        "imagenes": [
-            "lijas-producto2.jpg"
-        ]
-    },
-    {
-        "id": 13,
+        "id": 16,
         "categoria": "Partes",
         "marca": "KALIMA",
         "titulo": "RULEMANES KALIMA ABEC 7",
@@ -184,7 +229,7 @@
         ]
     },
     {
-        "id": 14,
+        "id": 17,
         "categoria": "Partes",
         "marca": "REDWINGS",
         "titulo": "RULEMANES REDWINGS METALBOX",
@@ -197,7 +242,7 @@
         ]
     },
     {
-        "id": 15,
+        "id": 18,
         "categoria": "Partes",
         "marca": "BONES KOWALSKI",
         "titulo": "RUEDAS BONES KOWALSKI SPF 54MM 84B P5",
@@ -210,7 +255,7 @@
         ]
     },
     {
-        "id": 16,
+        "id": 19,
         "categoria": "Partes",
         "marca": "WOODOO",
         "titulo": "RUEDAS WOODOO MUCUS VERDES 53MM",
@@ -225,33 +270,7 @@
         ]
     },
     {
-        "id": 17,
-        "categoria": "Partes",
-        "marca": "WOODOO",
-        "titulo": "TABLA DE SKATE WOODOO QUIQUE ILUMINATI",
-        "precio": 10.96,
-        "descuento": 20,
-        "descripcion": "Construcción con tecnología EPOBLOCK. Maple Canadiense de 7 capas + pegamento EPOXI.",
-        "stock": 13,
-        "imagenes": [
-            "tablas-producto1.jpg"
-        ]
-    },
-    {
-        "id": 18,
-        "categoria": "Partes",
-        "marca": "WOODOO",
-        "titulo": "TABLA DE SKATE WOODOO SANDRO ILUMINATI",
-        "precio": 10.96,
-        "descuento": 20,
-        "descripcion": "Construcción con tecnología EPOBLOCK. Maple Canadiense de 7 capas + pegamento EPOXI.",
-        "stock": 13,
-        "imagenes": [
-            "tablas-producto2.jpg"
-        ]
-    },
-    {
-        "id": 19,
+        "id": 20,
         "categoria": "Partes",
         "marca": "DATER",
         "titulo": "TRUCKS DATER 139MM FULL REDS",
@@ -266,7 +285,7 @@
         ]
     },
     {
-        "id": 20,
+        "id": 21,
         "categoria": "partes",
         "marca": "DATER",
         "titulo": "Trucks Dater skate 139 mm color",
@@ -279,7 +298,7 @@
         ]
     },
     {
-        "id": 21,
+        "id": 22,
         "categoria": "skates",
         "precio": 45000,
         "descuento": 30,
@@ -292,7 +311,7 @@
         "descripcion": "Skate trasher negro de madera de guatambu reforzada."
     },
     {
-        "id": 22,
+        "id": 23,
         "marca": "BONES KOWALSKI",
         "titulo": "Ruedas Bones kowalski",
         "categoria": "partes",

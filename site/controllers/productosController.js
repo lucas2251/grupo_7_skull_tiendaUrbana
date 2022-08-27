@@ -1,4 +1,4 @@
-let productos = require('../data/index.json')
+let productos = require('../data/productos.json')
 
 module.exports = {
     detalle: (req,res) => {

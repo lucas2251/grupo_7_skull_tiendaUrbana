@@ -14,7 +14,7 @@
     <section class="section1">
         
         
-        <% productos.forEach(producto => { %>
+        <% indexProductos.forEach(producto => { %>
         <article>
         <a class="ruta-detalle" href="/productos/detalle/<%= producto.id %>">
             <div class="image">
@@ -33,7 +33,7 @@
         </section>
         <h3 class="visto">LO MÁS VISTO</h3>
     <section class="section2">
-        <% productos.forEach(producto => { %>
+        <% indexProductos2.forEach(producto => { %>
             <article>
             <a class="ruta-detalle" href="/productos/detalle/<%= producto.id %>">
                 <div class="image">

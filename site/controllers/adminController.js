@@ -10,9 +10,7 @@ const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/product
 
     
 module.exports = {
-
-
-    listar: (req,res) => {
+listar: (req,res) => {
         return res.render('admin/listar', {
             productos
 
@@ -22,13 +20,15 @@ module.exports = {
         return res.render('admin/crear')
     },
     editar:(req,res) => {
+        id = +req.params.id
        let categoria =["skates","longboards","accesorios","partes"]
        let marca = ["Element","Lab","Kalima","Ace shcok","RINGS ACE WAX","WOODOO","REDWINGS","BONES KOWALSKI","DATER"]
         id = +req.params.id
         let producto = productos.find((elemento) => {
             return elemento.id == id
         }) 
-        /* return res.send(producto) Comprobar que esta llegando bien el elemento*/
+        /*return res.send(producto) Comprobar que esta llegando bien el elemento*/      
+
 
        return res.render('admin/editar',{producto,categoria,marca})
     },
@@ -70,6 +70,15 @@ module.exports = {
         productos.push(productoNuevo)
         guardar(productos)
         return res.redirect('/administrador/listar')
+    },
+    eliminar: (req, res) => {
+        idParams = +req.params.id
+
+       
+        let productosModificados = productos.filter(producto => producto.id !== idParams)
+        guardar(productosModificados)
+
+        return res.redirect('/administrador/listar')
+    }
     }
 
-    }

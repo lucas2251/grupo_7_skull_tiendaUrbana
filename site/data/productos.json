@@ -1,21 +1,22 @@
-[{
-    "id": 1,
-    "categoria": "longboards",
-    "marca": "Lab",
-    "titulo": "Longboard Completo SPOCK",
-    "precio": 23220,
-    "descuento": 20,
-    "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.  Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm. Wheelbase: 67.7cm, 64.7cm /26.6, 25.4.  GUATAMBÚ: resiste hasta 85kg, es ideal para principiantes.",
-    "stock": 13,
-    "imagenes": [
-        "lab-long-producto2.jpg",
-        "lab-general1.jpg",
-        "lab-general2.jpg"
-    ]
-},
+[
+    {
+        "id": 1,
+        "categoria": "longboards",
+        "marca": "Lab",
+        "titulo": "Longboard Completo SPOCK",
+        "precio": 23220,
+        "descuento": 20,
+        "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.  Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm. Wheelbase: 67.7cm, 64.7cm /26.6, 25.4.  GUATAMBÚ: resiste hasta 85kg, es ideal para principiantes.",
+        "stock": 13,
+        "imagenes": [
+            "lab-long-producto2.jpg",
+            "lab-general1.jpg",
+            "lab-general2.jpg"
+        ]
+    },
     {
         "id": 2,
-        "categoria":"Skates",
+        "categoria": "Skates",
         "marca": "Lab",
         "titulo": "Skate Completo , NEW JUNGLE",
         "precio": 116020,
@@ -23,11 +24,11 @@
         "descripcion": "Tabla cóncava con doble kick, compuesto por 7 laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 54 mm. MAPLE ECONÓMICO: resiste hasta 60 kg, viene solo en medida 8” es ideal para principintes y niños.",
         "stock": 13,
         "imagenes": [
-        "lab-producto2.png",
-        "lab-general1.jpg",
-        "lab-general2.jpg"
+            "lab-producto2.png",
+            "lab-general1.jpg",
+            "lab-general2.jpg"
         ]
-    }, 
+    },
     {
         "id": 3,
         "categoria": "longboards",
@@ -42,51 +43,50 @@
             "lab-general1.jpg",
             "lab-general2.jpg"
         ]
-    },   
+    },
     {
-            "id": 4,
-            "categoria": "Skates",
-            "marca": "Lab",
-            "titulo": "Skate Completo, DARK SKULL",
-            "precio": 15300,
-            "descuento": 20,
-            "descripcion": "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en 2 medidas 8” y 8.25”. Puede ser utilizada por niños y adultos.",
-            "stock": 13,
-            "imagenes": [
-                "lab-producto1.jpg",
-                "lab-general1.jpg",
-                "lab-general2.jpg"
-            ]},
-            
-            {
-                "id": 5,
-                "categoria":"Partes",
-                "marca": "CLEAVER BUCCHIERI ",
-                "titulo": "TABLA DE SKATE CLEAVER BUCCHIERI 78",
-                "precio": 11.560,
-                "descuento": 20,
-                "descripcion": "Construcción con tecnología EPOBLOCK. Maple Canadiense de 7 capas + pegamento EPOXI.",
-                "stock": 13,
-                "imagenes": [
-                "tablas-producto5.jpg"
-                ]
-            },
-            {
-                "id": 6,
-                "categoria":"Skates",
-                "marca": "Element",
-                "titulo": "SKATE ELEMENT SECTION",
-                "precio": 30.990,
-                "descuento": 20,
-                "descripcion": "DECK ELEMENT MAPLE CANADIENSE 8 . TRUCKS ELEMENT 139MM. RUEDAS 53MM 99A. RULEMANES ELEMENT ABEC 5",
-                "stock": 13,
-                "imagenes": [
-                "element-producto1.png",
-                "element-producto1b.png",
-                "element-general.png"
-                ]
-            },
-    
+        "id": 4,
+        "categoria": "Skates",
+        "marca": "Lab",
+        "titulo": "Skate Completo, DARK SKULL",
+        "precio": 15300,
+        "descuento": 20,
+        "descripcion": "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en 2 medidas 8” y 8.25”. Puede ser utilizada por niños y adultos.",
+        "stock": 13,
+        "imagenes": [
+            "lab-producto1.jpg",
+            "lab-general1.jpg",
+            "lab-general2.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "categoria": "Partes",
+        "marca": "CLEAVER BUCCHIERI ",
+        "titulo": "TABLA DE SKATE CLEAVER BUCCHIERI 78",
+        "precio": 11.56,
+        "descuento": 20,
+        "descripcion": "Construcción con tecnología EPOBLOCK. Maple Canadiense de 7 capas + pegamento EPOXI.",
+        "stock": 13,
+        "imagenes": [
+            "tablas-producto5.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "categoria": "Skates",
+        "marca": "Element",
+        "titulo": "SKATE ELEMENT SECTION",
+        "precio": 30.99,
+        "descuento": 20,
+        "descripcion": "DECK ELEMENT MAPLE CANADIENSE 8 . TRUCKS ELEMENT 139MM. RUEDAS 53MM 99A. RULEMANES ELEMENT ABEC 5",
+        "stock": 13,
+        "imagenes": [
+            "element-producto1.png",
+            "element-producto1b.png",
+            "element-general.png"
+        ]
+    },
     {
         "id": 7,
         "categoria": "Partes",
@@ -113,7 +113,8 @@
             "tablas-producto2.jpg"
         ]
     },
-        { "id": 9,
+    {
+        "id": 9,
         "categoria": "Skates",
         "marca": "Element",
         "titulo": "SKATE ELEMENT SECTION",
@@ -142,7 +143,7 @@
         ]
     },
     {
-        "id":11,
+        "id": 11,
         "categoria": "Skates",
         "marca": "Element",
         "titulo": "SKATE ELEMENT MAGMA SEAL",
@@ -155,9 +156,6 @@
             "element-general.png"
         ]
     },
-   
-   
-    
     {
         "id": 12,
         "categoria": "longboards",
@@ -174,7 +172,7 @@
         ]
     },
     {
-        "id":13,
+        "id": 13,
         "categoria": "longboards",
         "marca": "Kalima",
         "titulo": "LONGBOARD KALIMA COYA HARD MAPLE",
@@ -309,16 +307,5 @@
         "titulo": "Skate trasher",
         "marca": "KALIMA",
         "descripcion": "Skate trasher negro de madera de guatambu reforzada."
-    },
-    {
-        "id": 23,
-        "marca": "BONES KOWALSKI",
-        "titulo": "Ruedas Bones kowalski",
-        "categoria": "partes",
-        "precio": 12000,
-        "descuento": 10,
-        "stock": 12,
-        "descripcion": "Ruedas super reforzadas color negro.",
-        "imagenes": "default-image.png"
     }
 ]

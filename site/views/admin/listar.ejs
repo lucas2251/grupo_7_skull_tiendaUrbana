@@ -89,11 +89,18 @@
                         <td><a href="/administrador/editar/<%= producto.id %>">
                                 <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
                             </a>
-                            <a href="/administrador/editar">
+                          <!--   <a href="/administrador/editar">
                                 <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                            </a>
+                            </a>-->
+                            <form action="/administrador/eliminar/<%= producto.id %>?_method=DELETE
+                                "method="post"
+                                >   
+                                <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+
+                            </form>
                         </td>
                     </tr>
+
                     <% }); %>
             </tbody>
             

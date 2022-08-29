@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
+const methodOverride = require("method-override");
+
 const app = express();
 const port = 3030;
-const methodOverride = require("method-override");
+
 
 app.use(express.static(path.resolve(__dirname,'public')));
 
@@ -12,10 +14,10 @@ app.use(express.urlencoded({extended: false}));
 
 
 /* Requerir las rutas */
-let indexRouter = require('./routes/index')
-let productosRouter = require('./routes/productos')
-let usuariosRouter = require('./routes/usuarios')
-let administradorRouter = require('./routes/administrador')
+const indexRouter = require('./routes/index')
+const productosRouter = require('./routes/productos')
+const usuariosRouter = require('./routes/usuarios')
+const administradorRouter = require('./routes/administrador')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,9 +25,13 @@ app.set('view engine', 'ejs');
 
 /* Middlewares */
 app.use(express.json()); //estes
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname,'public')))
 /*trabajar con put y delete*/
 app.use(methodOverride("_method"));
+
+/* Trabajar con put y delete */
+app.use(methodOverride('_method'))
 
 /* Rutas */
 app.use('/', indexRouter);

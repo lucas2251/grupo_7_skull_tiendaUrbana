@@ -61,11 +61,11 @@ listar: (req,res) => {
             marca:Marca,
             titulo:Titulo,
             categoria:Categoria,
-            precio:Precio,
-            descuento:Descuento,
-            stock:Stock,
+            precio:+Precio,
+            descuento:+Descuento,
+            stock:+Stock,
             descripcion:Descripcion,
-            imagenes: "default-image.png"
+            imagenes: ["default-image.png"]
         }
         productos.push(productoNuevo)
         guardar(productos)

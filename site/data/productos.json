@@ -307,5 +307,18 @@
         "titulo": "Skate trasher",
         "marca": "KALIMA",
         "descripcion": "Skate trasher negro de madera de guatambu reforzada."
+    },
+    {
+        "id": 23,
+        "marca": "Element",
+        "titulo": "longboard element",
+        "categoria": "longboards",
+        "precio": 40000,
+        "descuento": 70,
+        "stock": 3,
+        "descripcion": "longboard element",
+        "imagenes": [
+            "default-image.png"
+        ]
     }
 ]

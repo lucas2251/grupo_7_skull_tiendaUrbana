@@ -12,43 +12,46 @@
     </div>
     <h3 class="ofertas">OFERTAS</h3>
     <section class="section1">
-        
-        
+    
         <% indexProductos.forEach(producto => { %>
-        <article>
+        <article class="article1">
         <a class="ruta-detalle" href="/productos/detalle/<%= producto.id %>">
-            <div class="image">
-            <img class="producto" src="/images/productos/<%= producto.imagenes[0]%>" alt="skate">
+            <div class="producto" style="background-image:url('/images/productos/<%= producto.imagenes[0]%>')">
+           
             <div class="contenedor2">
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <p class="precio">$<%= producto.precio %></p>
                 <p class="descuento">20% OFF</p>
                 <p class="descripcion"><%= producto.titulo %></p>
             </div>
+        </div>
         </a>
-            </div>
+            
         </article>
         <% }) %>
         
         </section>
         <h3 class="visto">LO MÁS VISTO</h3>
-    <section class="section2">
-        <% indexProductos2.forEach(producto => { %>
-            <article>
+        <section class="section1">
+    
+            <% indexProductos2.forEach(producto => { %>
+            <article class="article1">
             <a class="ruta-detalle" href="/productos/detalle/<%= producto.id %>">
-                <div class="image">
-                <img class="producto" src="/images/productos/<%= producto.imagenes[0]%>" alt="skate">
+                <div class="producto" style="background-image:url('/images/productos/<%= producto.imagenes[0]%>')">
+               
                 <div class="contenedor2">
                     <div class="heart"><i class="far fa-heart"></i></div>
                     <p class="precio">$<%= producto.precio %></p>
                     <p class="descuento">20% OFF</p>
                     <p class="descripcion"><%= producto.titulo %></p>
                 </div>
+            </div>
             </a>
-                </div>
+                
             </article>
             <% }) %>
-</section>
+            
+            </section>
 <h3 class="veo">LO VEO, LO QUIERO</h3>
 <section class="section3">
     <article>

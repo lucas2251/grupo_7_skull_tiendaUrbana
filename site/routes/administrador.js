@@ -1,24 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const multer = require("multer")
-const path = require("path")
-
-const storage = multer.diskStorage({
-    destination:(req,file,callback)=>{
-        callback(null,"./public/images/productos")
-    },
-    filename:(req,file,callback)=>{
-        callback(null,"img-"+ Date.now()+ path.extname(file.originalname) )
-    }
-})
+const upload = require("../middlewares/multerProductos")
 
 
 
-const upload = multer({
-    storage
-})
-
-let {crear,editar,listar,actualizar,tienda,eliminar} = require('../controllers/adminController')
+const {crear,editar,listar,actualizar,tienda,eliminar} = require('../controllers/adminController')
 
 
 router.get('/listar', listar)

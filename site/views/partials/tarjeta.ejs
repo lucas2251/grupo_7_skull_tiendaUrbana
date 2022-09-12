@@ -1,0 +1,14 @@
+<article class="article1">
+    <a class="ruta-detalle" href="/productos/detalle/<%= productos.id %>">
+        <div class="producto" style="background-image:url('/images/productos/<%= productos.imagenes%>')">
+       
+        <div class="contenedor2">
+            <div class="heart"><i class="far fa-heart"></i></div>
+            <p class="precio">$<%= productos.precio - (productos.precio * productos.descuento / 100)%></p>
+            <p class="descuento"><%= productos.descuento %>%</p>
+            <p class="descripcion"><%= productos.titulo %></p>
+        </div>
+    </div>
+    </a>
+        
+    </article>

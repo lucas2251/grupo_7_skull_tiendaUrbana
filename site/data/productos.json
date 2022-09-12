@@ -166,7 +166,6 @@
         "descripcion": "MADERA HARD MAPLE CANADIENSE ( LA MEJOR CALIDAD). Deck ideal Freestyle y Carving. Medidas 24 x 101 cm. Lija Negra. Ruedas Kalima Shock 83a 66mm de diamtero, el color puede variar segun stock al momento de la entrega. Rulemanes Kalima Lime abec 7. Trucks Kalima 180mm invertidos con Bujes de Absorcion.",
         "stock": 13,
         "imagenes": [
-            
             "kalima-producto1c.jpg"
         ]
     },
@@ -179,7 +178,7 @@
         "descuento": 20,
         "descripcion": "MADERA HARD MAPLE CANADIENSE ( LA MEJOR CALIDAD). Deck ideal Freeride . Medidas 24 x 96 cm. Lija Negra. Ruedas Kalima Shock 83a 66mm de diamtero, el color puede variar segun stock al momento de la entrega. Rulemanes Kalima Lime abec 7. Trucks Kalima 180mm invertidos con Bujes de Absorcion.",
         "stock": 13,
-        "imagenes": [ 
+        "imagenes": [
             "kalima-producto2c.jpg"
         ]
     },
@@ -317,5 +316,16 @@
         "imagenes": [
             "default-image.png"
         ]
+    },
+    {
+        "id": 24,
+        "marca": "Elements",
+        "titulo": "skate",
+        "categoria": "Skates",
+        "precio": 34000,
+        "descuento": 40,
+        "stock": 12,
+        "descripcion": "alto skate",
+        "imagenes": "img-1662951498988.jpg"
     }
 ]

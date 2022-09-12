@@ -54,6 +54,8 @@ listar: (req,res) => {
 
     },
     tienda: (req,res)=>{
+
+
         let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
 
         let productoNuevo= {
@@ -65,7 +67,7 @@ listar: (req,res) => {
             descuento:+Descuento,
             stock:+Stock,
             descripcion:Descripcion,
-            imagenes: ["default-image.png"]
+            imagenes: [req.file ? req.file.filename : "default-image.png"],
         }
         productos.push(productoNuevo)
         guardar(productos)

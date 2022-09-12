@@ -54,7 +54,7 @@ listar: (req,res) => {
 
     },
     tienda: (req,res)=>{
-
+    
 
         let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
 

@@ -9,7 +9,7 @@
         <div class="parrafo-form">
             <p class="saludo">¡Bienvenidx ADMIN!</p>           
         </div>
-        <form action="/administrador/editar/<%= producto.id %>?_method=PUT" method="post" class="create-form">
+        <form action="/administrador/editar/<%= producto.id %>?_method=PUT" enctype="multipart/form-data" method="post" class="create-form">
             <div class="control-formulario">
                 <label for="floatingSelect">Marca</label>
                 <select class="control" name="marca" id="floatingSelect" aria-label="Floating label select example">
@@ -52,10 +52,9 @@
                 
             </div>
             <div class="control-formulario">
-                <label>Imagen</label>
-                <input class="imagen" - type="file" name="imagen" placeholder="Introduzca la imagen del producto"
-                     value="" class="control"  multiple/>
-            </div>
+                <label for="formFileMultiple">Imagen</label>
+                <input class="imagen" - type="file" name="imagen" for="formFileMultiple" placeholder="Introduzcala imagen del producto"
+                     value="" class="control" />
             
             <button type="submit" class="boton-formulario">Editar Producto</button>
 

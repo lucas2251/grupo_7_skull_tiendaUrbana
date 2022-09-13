@@ -1,5 +1,6 @@
 const fs = require('fs')
 const productos = require("../data/productos.json");
+const {validationResult} = require("express-validator")
 
 const path = require('path')
 const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/productos.json')
@@ -54,25 +55,35 @@ listar: (req,res) => {
 
     },
     tienda: (req,res)=>{
-    
+        let errors = validationResult(req)
 
-        let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
+
+
+        if(errors.isEmpty()){
+        let {Marca,titulo,categoria,Precio,Descuento,Stock,descripcion} = req.body
 
         let productoNuevo= {
             id:productos[productos.length - 1].id + 1,
             marca:Marca,
-            titulo:Titulo,
-            categoria:Categoria,
+            titulo:titulo,
+            categoria:categoria,
             precio:+Precio,
             descuento:+Descuento,
             stock:+Stock,
-            descripcion:Descripcion,
+            descripcion:descripcion,
             imagenes: [req.file ? req.file.filename : "default-image.png"],
         }
         productos.push(productoNuevo)
         guardar(productos)
         return res.redirect('/administrador/listar')
-    },
+    } else {
+        return res.render('admin/crear',{
+            errors : errors.mapped(),
+            old: req.body
+        })
+    }
+
+},
     eliminar: (req, res) => {
         idParams = +req.params.id
 

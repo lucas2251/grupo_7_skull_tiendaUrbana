@@ -58,18 +58,18 @@ listar: (req,res) => {
         let errors = validationResult(req)
 
 
-
+console.log(errors.mapped());
         if(errors.isEmpty()){
-        let {Marca,titulo,categoria,Precio,Descuento,Stock,descripcion} = req.body
+        let {marca,titulo,categoria,precio,descuento,stock,descripcion} = req.body
 
         let productoNuevo= {
             id:productos[productos.length - 1].id + 1,
-            marca:Marca,
+            marca:marca,
             titulo:titulo,
             categoria:categoria,
-            precio:+Precio,
-            descuento:+Descuento,
-            stock:+Stock,
+            precio:+precio,
+            descuento:+descuento,
+            stock:+stock,
             descripcion:descripcion,
             imagenes: [req.file ? req.file.filename : "default-image.png"],
         }
@@ -77,6 +77,7 @@ listar: (req,res) => {
         guardar(productos)
         return res.redirect('/administrador/listar')
     } else {
+        console.log(req.body);
         return res.render('admin/crear',{
             errors : errors.mapped(),
             old: req.body

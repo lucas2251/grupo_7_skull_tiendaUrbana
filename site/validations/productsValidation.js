@@ -8,7 +8,7 @@ module.exports = [
 
     /* Marca */
     check('marca').trim()
-    .notEmpty().withMessage('Este campo es obligatorio'),
+    .notEmpty().withMessage('Debe seleccionar una marca'),
 
     /* Precio */
     check('precio').trim()
@@ -17,6 +17,7 @@ module.exports = [
 
     /* Descuento */
     check('descuento').trim()
+    .notEmpty().withMessage('Este campo es obligatorio').bail()
     .isInt().withMessage('Solo se aceptan numeros'),
 
     /* Stock */

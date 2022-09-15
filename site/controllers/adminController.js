@@ -37,7 +37,7 @@ listar: (req,res) => {
     
 
         const idParams = +req.params.id
-        const { marca, titulo, Categoria, precio, descuento, stock, descripcion } = req.body
+        const { marca, titulo, Categoria, precio, descuento, stock, descripcion, imagenes} = req.body
 
         productos.forEach(producto => {
             if (producto.id === idParams) {
@@ -48,6 +48,7 @@ listar: (req,res) => {
                 producto.descuento = +descuento
                 producto.stock = +stock
                 producto.descripcion = descripcion
+                producto.imagenes=imagenes
             }
         })
         guardar(productos)

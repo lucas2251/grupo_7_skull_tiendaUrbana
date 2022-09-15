@@ -2,7 +2,7 @@
 <html lang="en">
     <%- include('../partials/head',{title: 'Editar'}) %> 
 
-<body class="crear">
+<body>
     <%- include('../partials/header') %>
     <h1 class="titulo">Editar Productos</h1>
     <main class="crear">
@@ -17,11 +17,15 @@
                         <option value="<%= marca %>" <%= producto.marca.toLowerCase() === marca.toLowerCase() ? 'selected' : null %> ><%= marca %></option>
                       <% }) %>
                   </select>
+                  
             </div>
             <div class="control-formulario">
                 <label>Título</label>
-                <input type="name" name="titulo" id="titulo" placeholder="Ingrese el título"
-                    autocomplete="current-password" value="<%= producto.titulo %>" class="control" />
+                <input type="text" name="titulo" placeholder="Ingrese el título"
+                    autocomplete="current-password" value="<%= locals.old && old.titulo ? old.titulo :  producto.titulo %>" id="titulo" class="control" />
+                    <p class="error">
+                        <%= locals.errors && errors.titulo ? errors.titulo.msg : null %> 
+                    </p>
             </div>
             <div class="control-formulario">
                 <label for="floatingSelect">Categoria</label>
@@ -30,33 +34,51 @@
                         <option value="<%= categoria %>" <%= producto.categoria.toLowerCase() === categoria.toLowerCase() ? 'selected' : null %> ><%= categoria %></option>
                       <% }) %>
                   </select>
+                  
+                
             </div>
+            
             <div class="control-formulario">
                 <label>Precio</label>
-                <input type="number" name="precio" id="precio" placeholder="Ingrese el precio"
-                     value="<%=producto.precio%>" class="control" />
+                <input type="number" name="precio" placeholder="Ingrese el precio"
+                value="<%= locals.old && old.precio ? old.precio : producto.precio%>" id="precio" class="control" />
+                     <p class="error">
+                        <%= locals.errors && errors.precio ? errors.precio.msg : null %>
+                    </p>
             </div>
             <div class="control-formulario">
                 <label>Descuento</label>
                 <input type="number" name="descuento" placeholder="Ingrese el procentaje de descuento"
-                     value="<%=producto.descuento%>" class="control" />
+                value="<%= locals.old && old.descuento ? old.descuento : producto.descuento%>" id="descuento" class="control" />
+                     <p class="error">
+                        <%= locals.errors && errors.descuento ? errors.descuento.msg : null %>
+                    </p>
             </div>
             <div class="control-formulario">
                 <label>Stock</label>
-                <input type="number" name="stock" id="Stock" placeholder="Ingrese el stock"
-                     value="<%=producto.stock%>" class="control" />
+                <input type="number" name="stock" placeholder="Ingrese el stock"
+                value="<%= locals.old && old.stock ? old.stock : producto.stock%>" id="stock" class="control" />
+                     <p class="error">
+                        <%= locals.errors && errors.stock ? errors.stock.msg : null %>
+                    </p>
             </div>
             <div class="control-formulario">
                 <label>Descripción</label>
-                <textarea class="texto" - placeholder="Introduzca una breve descripción del producto" name="descripcion" ><%= producto.descripcion %></textarea >
+                <textarea class="texto" id="descripcion" name="descripcion" - placeholder="Introduzca una breve descripción del producto" ><%= locals.old && old.descripcion ? old.descripcion : producto.descripcion%></textarea >
+                    <p class="error">
+                        <%= locals.errors && errors.descripcion ? errors.descripcion.msg : null %>
+                    </p>
+                </div>
                 
             </div>
-            <div class="control-formulario">
-                <label for="formFileMultiple">Imagen</label>
-                <input class="imagen" - type="file" name="imagen" for="formFileMultiple" placeholder="Introduzcala imagen del producto"
-                     value="" class="control" />
             
-            <button type="submit" class="boton-formulario">Editar Producto</button>
+                        
+                <div class="control-formulario">
+                    <label>Imagen</label>
+                    <input class="imagen" - type="file" name="imagenes" placeholder="Introduzca la imagen del producto"
+                    value="<%= producto.imagenes%>" class="control"  multiple/>
+                </div>
+            <button type="submit" class="boton-formulario">Editar producto</button>
 
             
         </form>

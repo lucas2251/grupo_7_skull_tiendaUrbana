@@ -9,14 +9,12 @@
         "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.  Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm. Wheelbase: 67.7cm, 64.7cm /26.6, 25.4.  GUATAMBÚ: resiste hasta 85kg, es ideal para principiantes.",
         "stock": 13,
         "imagenes": [
-            "lab-long-producto2.jpg",
-            "lab-general1.jpg",
-            "lab-general2.jpg"
+            "lab-long-producto2.jpg"
         ]
     },
     {
         "id": 2,
-        "categoria": "Skates",
+        "categoria": "skates",
         "marca": "Lab",
         "titulo": "Skate Completo , NEW JUNGLE",
         "precio": 116020,
@@ -24,9 +22,7 @@
         "descripcion": "Tabla cóncava con doble kick, compuesto por 7 laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 54 mm. MAPLE ECONÓMICO: resiste hasta 60 kg, viene solo en medida 8” es ideal para principintes y niños.",
         "stock": 13,
         "imagenes": [
-            "lab-producto2.png",
-            "lab-general1.jpg",
-            "lab-general2.jpg"
+            "lab-producto2.png"
         ]
     },
     {
@@ -39,14 +35,12 @@
         "descripcion": "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi.Largo: 95cm/37.4 , Ancho: 22cm/8.66 , WB: 70.7cm/28. Trucks reforzados de aluminio (160 a 180 mm según stock). Rulemanes Abec9 , Ruedas de Uretano 70mm , Lija completa. OPCIONES DE MADERA: GUATAMBÚ: resiste hasta 85kg O MAPLE ECONÓMICO:  resiste hasta 85 kg",
         "stock": 13,
         "imagenes": [
-            "lab-long-producto1.jpg",
-            "lab-general1.jpg",
-            "lab-general2.jpg"
+            "lab-long-producto1.jpg"
         ]
     },
     {
         "id": 4,
-        "categoria": "Skates",
+        "categoria": "skates",
         "marca": "Lab",
         "titulo": "Skate Completo, DARK SKULL",
         "precio": 15300,
@@ -54,14 +48,12 @@
         "descripcion": "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. Truck reforzados de aluminio. Bujes 95 A, Rulemanes Abec 9, Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en 2 medidas 8” y 8.25”. Puede ser utilizada por niños y adultos.",
         "stock": 13,
         "imagenes": [
-            "lab-producto1.jpg",
-            "lab-general1.jpg",
-            "lab-general2.jpg"
+            "lab-producto1.jpg"
         ]
     },
     {
         "id": 5,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "CLEAVER BUCCHIERI ",
         "titulo": "TABLA DE SKATE CLEAVER BUCCHIERI 78",
         "precio": 11.56,
@@ -74,7 +66,7 @@
     },
     {
         "id": 6,
-        "categoria": "Skates",
+        "categoria": "skates",
         "marca": "Element",
         "titulo": "SKATE ELEMENT SECTION",
         "precio": 30.99,
@@ -82,14 +74,12 @@
         "descripcion": "DECK ELEMENT MAPLE CANADIENSE 8 . TRUCKS ELEMENT 139MM. RUEDAS 53MM 99A. RULEMANES ELEMENT ABEC 5",
         "stock": 13,
         "imagenes": [
-            "element-producto1.png",
-            "element-producto1b.png",
-            "element-general.png"
+            "element-producto1.png"
         ]
     },
     {
         "id": 7,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "WOODOO",
         "titulo": "TABLA DE SKATE WOODOO QUIQUE ILUMINATI",
         "precio": 10.96,
@@ -102,7 +92,7 @@
     },
     {
         "id": 8,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "WOODOO",
         "titulo": "TABLA DE SKATE WOODOO SANDRO ILUMINATI",
         "precio": 10.96,
@@ -115,22 +105,20 @@
     },
     {
         "id": 9,
-        "categoria": "Skates",
-        "marca": "Element",
-        "titulo": "SKATE ELEMENT SECTION",
-        "precio": 30.99,
-        "descuento": 20,
-        "descripcion": "DECK ELEMENT MAPLE CANADIENSE 8 . TRUCKS ELEMENT 139MM. RUEDAS 53MM 99A. RULEMANES ELEMENT ABEC 5",
-        "stock": 13,
+        "categoria": "partes",
+        "precio": 45000,
+        "descuento": 30,
+        "stock": 34,
         "imagenes": [
-            "element-producto1.png",
-            "element-producto1b.png",
-            "element-general.png"
-        ]
+            "trucks-producto2.jpeg"
+        ],
+        "titulo": "Trucks Dater",
+        "marca": "Dater",
+        "descripcion": "Trucks Dater re piolas"
     },
     {
         "id": 10,
-        "categoria": "Skates",
+        "categoria": "skates",
         "marca": "Element",
         "titulo": "SKATE ELEMENT MAGMA SECTION",
         "precio": 30.99,
@@ -144,7 +132,7 @@
     },
     {
         "id": 11,
-        "categoria": "Skates",
+        "categoria": "skates",
         "marca": "Element",
         "titulo": "SKATE ELEMENT MAGMA SEAL",
         "precio": 30.99,
@@ -166,8 +154,6 @@
         "descripcion": "MADERA HARD MAPLE CANADIENSE ( LA MEJOR CALIDAD). Deck ideal Freestyle y Carving. Medidas 24 x 101 cm. Lija Negra. Ruedas Kalima Shock 83a 66mm de diamtero, el color puede variar segun stock al momento de la entrega. Rulemanes Kalima Lime abec 7. Trucks Kalima 180mm invertidos con Bujes de Absorcion.",
         "stock": 13,
         "imagenes": [
-            "kalima-producto1.jpg",
-            "kalima-producto1b.jpg",
             "kalima-producto1c.jpg"
         ]
     },
@@ -181,14 +167,12 @@
         "descripcion": "MADERA HARD MAPLE CANADIENSE ( LA MEJOR CALIDAD). Deck ideal Freeride . Medidas 24 x 96 cm. Lija Negra. Ruedas Kalima Shock 83a 66mm de diamtero, el color puede variar segun stock al momento de la entrega. Rulemanes Kalima Lime abec 7. Trucks Kalima 180mm invertidos con Bujes de Absorcion.",
         "stock": 13,
         "imagenes": [
-            "kalima-producto2.jpg",
-            "kalima-producto2b.jpg",
             "kalima-producto2c.jpg"
         ]
     },
     {
         "id": 14,
-        "categoria": "Accesorios",
+        "categoria": "accesorios",
         "marca": "Ace shcok",
         "titulo": "PADS ACE SHCOK 1/16 BLACK",
         "precio": 1730,
@@ -201,7 +185,7 @@
     },
     {
         "id": 15,
-        "categoria": "Accesorios",
+        "categoria": "accesorios",
         "marca": "RINGS ACE WAX",
         "titulo": "VELA RINGS ACE WAX",
         "precio": 1490,
@@ -215,7 +199,7 @@
     },
     {
         "id": 16,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "KALIMA",
         "titulo": "RULEMANES KALIMA ABEC 7",
         "precio": 950,
@@ -228,7 +212,7 @@
     },
     {
         "id": 17,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "REDWINGS",
         "titulo": "RULEMANES REDWINGS METALBOX",
         "precio": 2.29,
@@ -241,7 +225,7 @@
     },
     {
         "id": 18,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "BONES KOWALSKI",
         "titulo": "RUEDAS BONES KOWALSKI SPF 54MM 84B P5",
         "precio": 17.56,
@@ -254,7 +238,7 @@
     },
     {
         "id": 19,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "WOODOO",
         "titulo": "RUEDAS WOODOO MUCUS VERDES 53MM",
         "precio": 3.69,
@@ -269,7 +253,7 @@
     },
     {
         "id": 20,
-        "categoria": "Partes",
+        "categoria": "partes",
         "marca": "DATER",
         "titulo": "TRUCKS DATER 139MM FULL REDS",
         "precio": 8.99,
@@ -294,18 +278,5 @@
         "imagenes": [
             "trucks-producto2.jpeg"
         ]
-    },
-    {
-        "id": 22,
-        "categoria": "skates",
-        "precio": 45000,
-        "descuento": 30,
-        "stock": 34,
-        "imagenes": [
-            "trucks-producto2.jpeg"
-        ],
-        "titulo": "Skate trasher",
-        "marca": "KALIMA",
-        "descripcion": "Skate trasher negro de madera de guatambu reforzada."
     }
 ]

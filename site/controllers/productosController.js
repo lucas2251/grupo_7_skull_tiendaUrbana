@@ -1,4 +1,4 @@
-let productos = require('../data/productos.json')
+const productos = require('../data/productos.json')
 
 module.exports = {
     detalle: (req,res) => {
@@ -18,5 +18,18 @@ module.exports = {
             producto : productoEnDetalle,
             productos
         })
-    },   
+    },  
+    categoria: (req,res)=>{
+        let categoriaSelecionada = req.params.categoria
+        let categorias = ["skates","longboards","accesorios","partes"]
+        
+        productosPorCategoria = productos.filter(productos => productos.categoria === categoriaSelecionada)
+
+        res.render("productos",{
+            categorias,
+            categoriaSelecionada,
+            productos,
+            productosPorCategoria
+        })
+    } 
 }

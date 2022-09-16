@@ -1,5 +1,6 @@
 const fs = require('fs')
 const productos = require("../data/productos.json");
+const {validationResult} = require("express-validator")
 
 const path = require('path')
 const guardar = (dato) => fs.writeFileSync(path.join(__dirname, '../data/productos.json')
@@ -36,7 +37,7 @@ listar: (req,res) => {
     
 
         const idParams = +req.params.id
-        const { marca, titulo, Categoria, precio, descuento, stock, descripcion } = req.body
+        const { marca, titulo, Categoria, precio, descuento, stock, descripcion, imagenes} = req.body
 
         productos.forEach(producto => {
             if (producto.id === idParams) {
@@ -47,6 +48,7 @@ listar: (req,res) => {
                 producto.descuento = +descuento
                 producto.stock = +stock
                 producto.descripcion = descripcion
+                producto.imagenes=imagenes
             }
         })
         guardar(productos)
@@ -54,23 +56,36 @@ listar: (req,res) => {
 
     },
     tienda: (req,res)=>{
-        let {Marca,Titulo,Categoria,Precio,Descuento,Stock,Descripcion} = req.body
+        let errors = validationResult(req)
+
+
+console.log(errors.mapped());
+        if(errors.isEmpty()){
+        let {marca,titulo,categoria,precio,descuento,stock,descripcion} = req.body
 
         let productoNuevo= {
             id:productos[productos.length - 1].id + 1,
-            marca:Marca,
-            titulo:Titulo,
-            categoria:Categoria,
-            precio:Precio,
-            descuento:Descuento,
-            stock:Stock,
-            descripcion:Descripcion,
-            imagenes: "default-image.png"
+            marca:marca,
+            titulo:titulo,
+            categoria:categoria,
+            precio:+precio,
+            descuento:+descuento,
+            stock:+stock,
+            descripcion:descripcion,
+            imagenes: [req.file ? req.file.filename : "default-image.png"],
         }
         productos.push(productoNuevo)
         guardar(productos)
         return res.redirect('/administrador/listar')
-    },
+    } else {
+        console.log(req.body);
+        return res.render('admin/crear',{
+            errors : errors.mapped(),
+            old: req.body
+        })
+    }
+
+},
     eliminar: (req, res) => {
         idParams = +req.params.id
 

@@ -9,65 +9,91 @@
         <div class="parrafo-form">
             <p class="saludo">¡Bienvenidx ADMIN!</p>           
         </div>
-        <form action="/administrador/crear" method="post" class="create-form">
+        <form action="/administrador/crear" method="post" class="create-form" enctype="multipart/form-data">
             <div class="control-formulario">
                 <label for="floatingSelect">Marca</label>
-                <select class="control" name="Marca" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected hidden>Selecciona una opcion</option>
-                    <option value="Elements">Element</option>
-                    <option value="Lab">Lab</option>
-                    <option value="Kalima">Kalima</option>
-                    <option value="Woodo">Woodo</option>
-                    <option value="Ace shcok">Ace shcok</option>
-                    <option value="RINGS ACE WAX">RINGS ACE WAX</option>
-                    <option value="BONES KOWALSKI">BONES KOWALSKI</option>
-                    <option value="REDWINGS">REDWINGS</option>
-                    <option value="DATER">DATER</option>
+                <select class="control" name="marca" id="marca" aria-label="Floating label select example">
+                    <option  hidden value="">Selecciona una opcion</option>
+                    <option <%=  locals.old && old.marca === "Elements" ? `selected` : null %> value="Elements">Element</option>
+                    <option <%=  locals.old && old.marca === "Lab" ? `selected` : null %> value="Lab">Lab</option>
+                    <option <%=  locals.old && old.marca === "Kalima" ? `selected` : null %> value="Kalima">Kalima</option>
+                    <option <%=  locals.old && old.marca === "Woodo" ? `selected` : null %> value="Woodo">Woodo</option>
+                    <option <%=  locals.old && old.marca === "Ace shcok" ? `selected` : null %> value="Ace shcok">Ace shcok</option>
+                    <option <%=  locals.old && old.marca === "RINGS ACE WAX" ? `selected` : null %> value="RINGS ACE WAX">RINGS ACE WAX</option>
+                    <option <%=  locals.old && old.marca === "BONES KOWALSKI" ? `selected` : null %> value="BONES KOWALSKI">BONES KOWALSKI</option>
+                    <option <%=  locals.old && old.marca === "REDWINGS" ? `selected` : null %> value="REDWINGS">REDWINGS</option>
+                    <option <%=  locals.old && old.marca === "DATER" ? `selected` : null %> value="DATER">DATER</option>
                 
                   </select>
+                  <p class="error">
+                    <%= locals.errors && errors.marca ? errors.marca.msg : null %>
+                </p>
             </div>
             <div class="control-formulario">
                 <label>Título</label>
-                <input type="name" name="Titulo" placeholder="Ingrese el título"
-                    autocomplete="current-password" value="" class="control" />
+                <input type="text" name="titulo" placeholder="Ingrese el título"
+                    autocomplete="current-password" value="<%= locals.old && old.titulo ? old.titulo : null%>" id="titulo" class="control" />
+                    <p class="error">
+                        <%= locals.errors && errors.titulo ? errors.titulo.msg : null %> 
+                    </p>
             </div>
             <div class="control-formulario">
                 <label for="floatingSelect">Categoria</label>
-                <select class="control" name="Categoria" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected hidden>Selecciona una opcion</option>
-                    <option value="Skates">Skates</option>
-                    <option value="Longboards">Longboards</option>
-                    <option value="Accesorios">Accesorios</option>
-                    <option value="Partes">Partes</option>
+                <select class="control" name="categoria" id="categoria" >
+               
+                        <option hidden value="">Selecciona una opcion</option>
+                        <option <%=  locals.old && old.categoria === "Skates" ? `selected` : null %>  value="Skates">Skates</option>
+                        <option <%= locals.old && old.categoria === "Longboards" ? `selected` : null %>   value="Longboards">Longboards</option>
+                        <option <%= locals.old && old.categoria === "Accesorios" ? `selected` : null %>   value="Accesorios">Accesorios</option>
+                        <option <%= locals.old && old.categoria === "Partes" ? `selected` : null %>   value="Partes">Partes</option>
+                    
                   </select>
+                  <p class="error" >
+                    <%= locals.errors && errors.categoria ? errors.categoria.msg : null %>
+                </p>
+                
             </div>
             
             <div class="control-formulario">
                 <label>Precio</label>
-                <input type="number" name="Precio" placeholder="Ingrese el precio"
-                     value="" class="control" />
+                <input type="number" name="precio" placeholder="Ingrese el precio"
+                value="<%= locals.old && old.precio ? old.precio : null%>" id="precio" class="control" />
+                     <p class="error">
+                        <%= locals.errors && errors.precio ? errors.precio.msg : null %>
+                    </p>
             </div>
             <div class="control-formulario">
                 <label>Descuento</label>
-                <input type="number" name="Descuento" placeholder="Ingrese el procentaje de descuento"
-                     value="" class="control" />
+                <input type="number" name="descuento" placeholder="Ingrese el procentaje de descuento"
+                value="<%= locals.old && old.descuento ? old.descuento : null%>" id="descuento" class="control" />
+                     <p class="error">
+                        <%= locals.errors && errors.descuento ? errors.descuento.msg : null %>
+                    </p>
             </div>
             <div class="control-formulario">
                 <label>Stock</label>
-                <input type="number" name="Stock" placeholder="Ingrese el stock"
-                     value="" class="control" />
+                <input type="number" name="stock" placeholder="Ingrese el stock"
+                value="<%= locals.old && old.stock ? old.stock : null%>" id="stock" class="control" />
+                     <p class="error">
+                        <%= locals.errors && errors.stock ? errors.stock.msg : null %>
+                    </p>
             </div>
             <div class="control-formulario">
                 <label>Descripción</label>
-                <textarea class="texto" name="Descripcion" - placeholder="Introduzca una breve descripción del producto" ></textarea >
+                <textarea class="texto" id="descripcion" name="descripcion" - placeholder="Introduzca una breve descripción del producto" ><%= locals.old && old.descripcion ? old.descripcion : null%></textarea >
+                    <p class="error">
+                        <%= locals.errors && errors.descripcion ? errors.descripcion.msg : null %>
+                    </p>
+                </div>
                 
             </div>
-            <div class="control-formulario">
-                <label>Imagen</label>
-                <input class="imagen" - type="file" name="imagen" placeholder="Introduzca la imagen del producto"
-                     value="" class="control"  multiple/>
-            </div>
             
+                        
+                <div class="control-formulario">
+                    <label>Imagen</label>
+                    <input class="imagen" - type="file" name="imagen" placeholder="Introduzca la imagen del producto"
+                         value="" class="control"  multiple/>
+                </div>
             <button type="submit" class="boton-formulario">Crear Producto</button>
 
             
@@ -75,6 +101,7 @@
 
         
     </main>
+    <script src="/javascripts/imagenes.js"></script>
     <%- include('../partials/footer') %> 
 </body>
 

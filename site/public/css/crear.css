@@ -2,7 +2,18 @@
 .crear .create-form{
     padding: 20px 15px;
 }
-
+.crear .control-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.crear .error{
+    margin: 10px 0px 10px 0px;
+    color: white;
+    background-color: red;
+    width: 20%;
+}
 .crear .control-formulario{
     margin-bottom: 15px;
 }

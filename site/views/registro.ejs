@@ -6,7 +6,7 @@
    
 <body>
     <%- include('./partials/header') %>    
-    <main>
+    <main class="crear">
         <div class="parrafo-form">
             <p>¡Bienvenido a Skull Tienda Urbana!</p>
             <p>
@@ -14,44 +14,64 @@
                 seguir a tus marcas favoritas!
             </p>
         </div>
-        <form action="" method="post" class="create-form">
+        <form action="/usuarios/registro"   enctype="multipart/form-data" method="POST" class="create-form">
             <div class="control-formulario">
                 <label>Correo Electronico:</label>
-                <input type="email" name="email" minlength="1"
-                    placeholder="Introduzca la dirección de correo electrónico" autocomplete="current-email" value=""
+                <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>"
+                    placeholder="Introduzca la dirección de correo electrónico" 
                     class="control" />
+                    <% if (locals.errors && errors.email) { %>
+                        <small class="error"><%= errors.email.msg %></small>
+                    <% } %>
             </div>
             <div class="control-formulario">
                 <label>Contraseña:</label>
-                <input type="password" name="password" placeholder="Ingresa tu contraseña"
-                    autocomplete="current-password" value="" class="control" />
+                <input type="password" id="clave" name="clave" placeholder="Ingresa tu contraseña"
+                     value="" class="control" />
+                    <% if (locals.errors && errors.clave) { %>
+                        <small class="error"><%= errors.clave.msg %></small>
+                    <% } %>
             </div>
             <div class="control-formulario">
                 <label>Confirmar Contraseña:</label>
-                <input type="password" name="password" placeholder="Ingresa tu contraseña"
-                    autocomplete="current-password" value="" class="control" />
+                <input type="password" id="clave2" name="clave2" placeholder="Ingresa tu contraseña"
+                     value="" class="control" />
+                     <% if (locals.errors && errors.clave2) { %>
+                        <small class="error" ><%= errors.clave2.msg %></small>
+                    <% } %>
             </div>
             <div class="control-formulario">
                 <label>Nombre:</label>
-                <input type="text" name="nombre" placeholder="Ingresa tu nombre"
-                     value="" class="control" />
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"
+                     value="<%= locals.old && old.nombre ? old.nombre : null%>" class="control" />
+                     <% if (locals.errors && errors.nombre) { %>
+                        <small class="error"><%= errors.nombre.msg %></small>
+                    <% } %>
             </div>
             <div class="control-formulario">
                 <label>Apellido:</label>
-                <input type="text" name="apellido" placeholder="Ingresa tu Apellido"
-                     value="" class="control" />
+                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu Apellido"
+                     value="<%= locals.old && old.nombre ? old.nombre : null%>" class="control" />
+                     <% if (locals.errors && errors.apellido) { %>
+                        <small class="error"><%= errors.apellido.msg %></small>
+                    <% } %>
             </div>
-            
+            <div class="control-formulario">
+                <label>Imagen</label>
+                <input class="imagen" - type="file" name="imagen" placeholder="Introduzca su foto de perfil"
+                     value="" class="control" />
+                     <% if (locals.errors && errors.imagen) { %>
+                        <small class="error"><%= errors.imagen.msg %></small>
+                    <% } %>
+            </div>
+            <div class="control-formulario">
             <button type="submit" class="boton-formulario">Crear mi cuenta</button>
-
+            <button type="reset" class="boton-formulario">Cancelar</button>
+        </div>
             
         </form>
 
-        <div class="parrafo-form">
-            <p>Regístrese para recibir las noticias de SKULL Tienda Urbana y obtenga un cupón de $ 1500 para su próxima compra. Recibirás alertas de ventas, ofertas exclusivas y lo último en estilos y tendencias.</p>
-            <p>
-                Al suscribirte y/o crear una cuenta, aceptas los  Términos y condiciones de SKULL Tienda Urbana y  la Política de privacidad .
-            </p>
+        
     </main>
     <%- include('./partials/footer') %> 
 </body>

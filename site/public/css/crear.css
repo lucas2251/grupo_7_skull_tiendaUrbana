@@ -24,7 +24,7 @@
     display: block;
 }
 .crear .control-formulario .control{
-    width: 100%;
+    width: 90%;
     padding: 8px 8px;
     box-shadow: 2px 2px 4px var(--colorVerdeOscuro);
 }
@@ -36,6 +36,8 @@
     color:#ffffff;
     padding: 5px 10px;
     border-radius: 5px;
+    margin: 10px
+    
 }
 .crear .parrafo-form{
     padding: 12px;
@@ -109,7 +111,7 @@
     }
     .crear .create-form .boton-formulario{
         display: block;
-        margin: 0 auto;
+        margin: 10px
     }
     .crear .control-formulario .texto{ 
         display: block;  

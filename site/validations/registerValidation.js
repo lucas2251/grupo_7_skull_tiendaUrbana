@@ -2,7 +2,10 @@ const {check,body} = require('express-validator')
 
 module.exports = [
     /* Nombre */
-    check('name').trim()
+    check('nombre').trim()
+    .notEmpty().withMessage('Debe ingresar su nombre').bail()
+    .isLength({min:2}).withMessage('Debe contener al menos 2 caracteres'),
+    check('apellido').trim()
     .notEmpty().withMessage('Debe ingresar su nombre').bail()
     .isLength({min:2}).withMessage('Debe contener al menos 2 caracteres'),
 
@@ -12,24 +15,14 @@ module.exports = [
     .isEmail().withMessage('Debe ingresar un email valido'),
 
     /* Contraseña */
-    check('pass')
+    check('clave')
     .isLength({min:8}).withMessage('Debe contener al menos 8 caracteres'),
-    check('pass2')
+    check('clave2')
     .isLength({min:8}).withMessage('Debe contener al menos 8 caracteres').bail(),
 
-    /* Pais */
-    check('pais')
-    .notEmpty().withMessage('Debe ingresar su Pais'),
+    
 
-    /* Genero */
-    check('genero')
-    .notEmpty().withMessage('Debe ingresar su Genero'),
-
-    /* terminos */
-    check('terminos')
-    .notEmpty().withMessage('Debe Aceptar nuestros terminos y condiciones'),
-
-    body('pass2')
+    body('clave2')
     .custom((value,{req}) => value !== req.body.pass ? false : true)
     .withMessage('Las contraseñas no coinciden')
 ]

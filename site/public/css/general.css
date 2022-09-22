@@ -9,10 +9,11 @@
 html{
     font-size: 10px;
     font-family: var(--fuente-Poppins);
+    
 }
 
 body{
-    min-width: 425px;
+   
     background-color: white;
 
 }

@@ -74,9 +74,11 @@
             
                         
                 <div class="control-formulario">
-                    <label>Imagen</label>
-                    <input class="imagen" - type="file" name="imagenes" placeholder="Introduzca la imagen del producto"
-                    value="<%= producto.imagenes%>" class="control" />
+                    
+                    <img src="/images/productos/<%= producto.imagenes[0] %>" class="imagedit">
+                    <label>Cambiar imagen</label>
+                    <input class="imagen" - type="file" name="imagen" placeholder="Introduzca la imagen del producto"
+                         value="" class="control" />
                 </div>
             <button type="submit" class="boton-formulario">Editar producto</button>
 

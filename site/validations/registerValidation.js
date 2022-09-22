@@ -23,6 +23,6 @@ module.exports = [
     
 
     body('clave2')
-    .custom((value,{req}) => value !== req.body.pass ? false : true)
+    .custom((value,{req}) => value !== req.body.clave ? false : true)
     .withMessage('Las contraseñas no coinciden')
 ]

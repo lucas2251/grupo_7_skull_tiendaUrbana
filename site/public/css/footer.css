@@ -122,7 +122,7 @@ footer section ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 150%;
+        width: 100%;
     }
     .icon-mapa article {
         display: flex;

@@ -2,6 +2,9 @@
 .crear .create-form{
     padding: 20px 15px;
 }
+.crear .imagedit{
+    width: 30%;
+}
 .crear .control-formulario{
     display: flex;
     flex-direction: column;

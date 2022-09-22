@@ -20,9 +20,9 @@
                 <input type="email" name="email" id="email" value="<%= locals.old && old.email ? old.email : null%>"
                     placeholder="Introduzca la dirección de correo electrónico" 
                     class="control" />
-                    <% if (locals.errors && errors.email) { %>
-                        <small class="error"><%= errors.email.msg %></small>
-                    <% } %>
+                    
+                        <small class="error"><%= locals.errors && errors.email ? errors.email.msg : null %></small>
+                    
             </div>
             <div class="control-formulario">
                 <label>Contraseña:</label>

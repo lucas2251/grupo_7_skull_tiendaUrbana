@@ -31,7 +31,8 @@ module.exports = {
             apellido:apellido,
             email:email,
             clave:clave,
-            imagen: req.file.size > 1 ? req.file.filename : "avatar-porDefecto.png"
+            imagen: req.file.size > 1 ? req.file.filename : "avatar-porDefecto.png",
+            rol: "usuario"
         }
         usuarios.push(usuarioNuevo)
         guardar(usuarios)
@@ -50,7 +51,17 @@ module.exports = {
     procesoIngresar: (req,res) => {
 let errors = validationResult(req)
 if(errors.isEmpty()){
-    return res.send(req.body)
+
+const {email}=req.body
+let usuario = usuarios.find(user => user.email === email)
+req.session.usuarioIngresar = {
+    id: usuario.id,
+    nombre : usuario.nombre,
+    rol: usuario.rol,
+    imagen:usuario.imagen
+}
+return res.redirect("perfil")
+    /*return res.send(req.body)*/
 }else{
     return res.render("ingresar",
     {
@@ -58,5 +69,12 @@ if(errors.isEmpty()){
         old: req.body
     })
 }
+    }, perfil: (req,res) => {
+       
+        return res.render('perfil')
+    },
+    desconectar: (req,res)=>{
+        req.session.destroy()
+        return res.redirect("/")
     }
 }

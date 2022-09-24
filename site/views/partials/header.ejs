@@ -13,8 +13,13 @@
     </form>
 
     <ul class="icons">
+<%if (locals.usuarioIngresar) { %>
+    <li><a href="usuarios/perfil">Bienvenido <%= locals.usuarioIngresar.nombre  %> </a></li>
+    <%} else {%>
         <li><a href="/usuarios/ingresar"><i class="fas fa-sign-in-alt"></i></a></li>
         <li><a href="/usuarios/registro"><i class="far fa-user"></i></a></li>
+   <% } %>
+        
         <li><a href="#"><i class="fas fa-heart"></i></a></li>
         <li><a href="/productos/carrito"><i class="fas fa-shopping-basket"></i></a></li>
     </ul>

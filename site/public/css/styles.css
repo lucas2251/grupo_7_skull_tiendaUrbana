@@ -4,6 +4,7 @@
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./contacto.css');
+@import url('./perfil.css');
 
 @import url('./home.css');
 /* el home debe tener secciones mino ofertas,destacados,nuevos, tu ultima vicita,categoria extras,lo mas visitados, segun el tipo, segun el material, tipo de producto*/

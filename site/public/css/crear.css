@@ -63,6 +63,18 @@
     box-shadow: 2px 2px 4px var(--colorVerdeOscuro);        
 
 }
+.crear .recordarme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+   font-size: 15px;
+    border: solid var(--colorVerdeOscuro) 1px;
+    margin: 10px;
+}
+.crear .recordarme input{
+    margin: 3px;
+}
 
 /* Tablet */
 @media(min-width:426px){ 

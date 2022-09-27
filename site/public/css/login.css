@@ -5,9 +5,6 @@ body header {
     color: var(--colorBlanco);
 }
 
-body .slogan{
-    width: 95%;
-}
 
 body header .content-header{
     width: 90%;

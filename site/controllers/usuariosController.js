@@ -71,7 +71,7 @@ module.exports = {
     }
 
     if (recordarme) {
-        res.cookie("SKULL-TIENDA URBANA", req.session.usuarioIngresar,{
+        res.cookie("Skull", req.session.usuarioIngresar,{
             maxAge: 1000 * 60 * 60 * 24
         })
     }
@@ -91,6 +91,9 @@ module.exports = {
     },
     desconectar: (req,res)=>{
         req.session.destroy()
+        if(req.cookies.Skull){
+            res.cookie('Skull','',{maxAge: -1})
+        }
         return res.redirect("/")
     }
 }

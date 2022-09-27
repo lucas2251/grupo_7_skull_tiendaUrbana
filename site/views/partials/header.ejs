@@ -30,7 +30,12 @@
             <li><a href="/productos/longboards">Longboars</a></li>
             <li><a href="/productos/accesorios">Accesorios</a></li>
             <li><a href="/productos/partes">Armar mi skate</a></li>
-            <li><a href="/administrador/listar">Admin</a></li>
+
+          
+            <%if (locals.usuarioIngresar && locals.usuarioIngresar.rol === "admin") { %>
+                <li><a href="/administrador/listar">Admin</a></li>
+                <%} %>
+            
         </ul>
 
     </nav>

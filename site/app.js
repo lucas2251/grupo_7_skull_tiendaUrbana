@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const cookieParser = require('cookie-parser');
 const methodOverride = require("method-override");
 const session = require("express-session")
 
@@ -32,6 +33,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname,'public')))
 app.use(session({secret:"Grupo 7 SKULL"}))
 app.use(usuarioIngresar)
+app.use(cookieParser());
 /*trabajar con put y delete*/
 app.use(methodOverride("_method"));
 

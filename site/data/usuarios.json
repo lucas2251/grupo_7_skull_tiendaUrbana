@@ -1,11 +1,12 @@
-[
+
+[ 
     {
         "id": 1,
         "nombre": "Cristian",
         "apellido": "Elias",
         "email": "cristiannicolas32@hotmail.com",
-        "contraseña": "password",
-        " rol": "Administrador",
+        "clave": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "admin",
         "imagen": "image"
     },
     {
@@ -13,17 +14,17 @@
         "nombre": "Jeaneth",
         "apellido": "Barrera",
         "email": "jeanette.barrera0710@gmail.com",
-        "contraseña": "password",
-        " rol": "Administrador",
-        "imagen": "image"
+        "clave":"$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "admin",
+        "imagen": "avatar-porDefecto.png"
     },
     {
         "id": 3,
         "nombre": "Lucas",
         "apellido": "Cordoba",
         "email": "lucascordoba2@hotmail.com",
-        "contraseña": "123456789",
-        "rol": "usuario",
+        "clave": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "admin",
         "imagen": "avatar-porDefecto.png"
     },
     {
@@ -31,8 +32,8 @@
         "nombre": "Yesica",
         "apellido": "Fiorentino",
         "email": "jesicafiore1@gmail.com",
-        "contraseña": "password",
-        " rol": "Administrador",
+        "contraseña": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "usuario",
         "imagen": "image"
     },
     {
@@ -40,8 +41,17 @@
         "nombre": "Emiliano",
         "apellido": "Amarante",
         "email": "emiliano198218@gmail.com",
-        "contraseña": "password",
-        " rol": "Administrador",
+        "clave": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "rol": "usuario",
         "imagen": "image"
+    },
+    {
+        "id": 6,
+        "nombre": "juan",
+        "apellido": "carlos",
+        "email": "juan@gmail.com",
+        "clave": "$2a$12$9V0JdkYg.PIZvsZqwEHa5ORyHt.20wCyhk6B8aRQ.w2Cvevbu78Yy",
+        "imagen": "avatar-porDefecto.png",
+        "rol": "usuario"
     }
 ]
